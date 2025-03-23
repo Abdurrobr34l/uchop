@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uchop</title>
+  <!-- CSS -->
+  <!-- Swiper CSS -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="./assets/logo-D5Ov_eYV.png" type="image/x-icon" />
+  <script type="module" crossorigin src="./assets/index-BeQ7MMqx.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CCO5aaGx.css">
+</head>
+
+<body class="pt-[11px]font-jakarta bg-[#EFEFFE] text-primaryclr-0">
+  <!-- *HEADER START -->
+  <header
+    class="fixed top-[20px] md:top-[45px] left-0 right-0 container w-[92.5%] mx-auto md:px-12 lg:px-28 text-white z-50">
+    <div class="max-w-screen-xl mx-auto px-5 md:px-8 relative">
+
+      <div class="flex justify-between items-center py-3 px-4 rounded-full backdrop-blur-3xl bg-[#ffffff2f]">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html"><img src="data:image/png;base64,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" alt="Logo image"
+              class="w-[37px] h-[37px] sm:w-[56px] sm:h-[56px]" /></a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden lg:flex gap-10">
+          <a href="#solutions" class="hover:text-secondaryclr transition duration-300 ease-in-out">Solutions</a>
+          <a href="#pricing" class="hover:text-secondaryclr transition duration-300 ease-in-out">Pricing</a>
+          <a href="#blogs" class="hover:text-secondaryclr transition duration-300 ease-in-out">Blogs</a>
+        </nav>
+
+        <!-- Login + Request a Demo -->
+        <div class="hidden lg:flex gap-[19.5px] items-center">
+          <a href="#login" class="hover:text-secondaryclr transition duration-300 ease-in-out">Login</a>
+          <a href="#"
+            class="py-3 px-6 font-semibold text-base rounded-full bg-white text-primaryclr hover:bg-secondaryclr hover:text-white transition duration-300 ease-in-out">Request
+            a demo</a>
+        </div>
+
+        <!-- Hamburger Icon (No Glassmorphism, No Border Radius) -->
+        <button id="menu-btn" class="lg:hidden p-3 focus:outline-none">
+          <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ?Mobile Menu (Glassmorphism Effect) -->
+  <div id="mobile-menu"
+    class="fixed top-0 right-[-223px] pt-10 flex flex-col items-center w-[223px] h-full bg-[#ffffff2f] backdrop-blur-3xl shadow-lg z-50 transition-transform duration-300 pointer-events-none">
+    <!-- Close Button -->
+    <button id="close-btn" class="absolute top-8">
+      <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+
+    <!-- Menu Links -->
+    <nav class="mt-16 flex flex-col gap-32 text-lg text-center text-white">
+      <!-- ?menu -->
+      <ul class="flex flex-col gap-10">
+        <li>
+          <a href="#solutions"
+            class="menu-link hover:text-secondaryclr transition duration-300 ease-in-out">Solutions</a>
+        </li>
+        <li>
+          <a href="#pricing" class="menu-link hover:text-secondaryclr transition duration-300 ease-in-out">Pricing</a>
+        </li>
+        <li>
+          <a href="#blogs" class="menu-link hover:text-secondaryclr transition duration-300 ease-in-out">Blogs</a>
+        </li>
+      </ul>
+      <!-- ?login -->
+      <ul class="flex flex-col gap-8">
+        <li>
+          <a href="#login"
+            class="menu-link gap-[129px] hover:text-secondaryclr transition duration-300 ease-in-out">Login</a>
+        </li>
+        <li>
+          <a href="#"
+            class="py-3 px-6 font-semibold text-base rounded-full bg-white text-primaryclr hover:bg-secondaryclr hover:text-white transition duration-300 ease-in-out">Request
+            a demo</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- *HEADER END -->
+
+  <!-- *MAIN START -->
+  <main>
+
+    <!-- *BANNER START -->
+    <section
+      class="overflow-hidden relative z-0 mx-2 mt-2 md:mx-4 md:mt-5 pt-[120px] md:px-12 lg:px-32 text-center bg-bannerBgimg bg-top bg-no-repeat bg-bannerBgclr rounded-[19px]">
+
+      <!-- ?Contents -->
+      <div class="max-w-screen-xl mx-auto px-5 md:px-8 relative z-10"> <!-- Added z-10 to keep contents above -->
+        <div class="pt-8 pb-[41px] lg:pt-[67px] lg:pb-[60px]">
+
+          <!-- ?Heading -->
+          <div>
+            <h1
+              class="px-[14px] xl:px-6 font-urbanist font-semibold text-[clamp(40px,_6vw,_109px)] bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent leading-10 md:leading-[50px] lg:leading-[60px] xl:leading-[70px] 1.5xl:leading-[98px]">
+              Transform
+              <span><img src="./assets/img-1-J3ap_imd.png" alt="Banner image"
+                  class="inline-block w-[150.12px] h-[52px] lg:w-[250px] lg:h-[100px] xl:w-[332px] xl:h-[115px]" /></span>
+              your event into an unforgettable story
+              <span><img src="./assets/text-image-desk-C9XQFyx3.png" alt="Banner text image"
+                  class="inline-block w-[164px] h-[30px] sm:w-[221px] sm:h-[40px] lg:w-[335px] lg:h-[50px] xl:w-[382px] xl:h-[60px] 1.5xl:w-[429px] 1.5xl:h-[60px] 2xl:w-[447px] 2xl:h-[81px]" /></span>
+            </h1>
+          </div>
+          <!-- ?Contents & Image -->
+          <div
+            class="flex flex-col items-center xl:px-3 xl:flex-row-reverse xl:h-[340px] xl:gap-8 1.5xl:px-6 1.5xl:gap-0 1.5xl:h-[450px]">
+            <!-- Image -->
+            <div class="xl:mt-[-50px] xl:basis-[55%] 1.5xl:basis-[60%]">
+              <img src="./assets/img-2-BusTE_19.png" alt="Banner image" class="lg:w-[500px] xl:w-auto xl:h-auto" />
+            </div>
+            <div class="xl:basis-[0%] 1.5xl:basis-[10%]"></div>
+            <!-- Contents -->
+            <div class="xl:text-left xl:basis-[45%] 1.5xl:basis-[50%]">
+              <p class="md:text-[20px] lg:px-[120px] xl:p-0 xl:text-left 1.5xl:pr-[70px]">
+                Capture the moments that matter and share them with the world in
+                real-time. With Uchop, your event becomes an engaging experience
+                that stands out and lasts.
+              </p>
+              <a href="#"
+                class="inline-block mt-5 py-[16.5px] 1.5xl:py-5 px-[30px] font-semibold text-base tracking-[-0.25px] rounded-[50px] bg-white hover:bg-white/95 transition duration-300 ease-in-out">Get
+                Started Now</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ?BG Images -->
+      <!-- Left BG -->
+      <div class="hidden xl:block absolute bottom-[-50px] left-0 z-0">
+        <img src="./assets/line-left-BT-cVvtz.png" alt="Call to action background image 1" class="w-[900px] h-[700px]">
+      </div>
+
+      <!-- Right BG -->
+      <div class="hidden xl:block absolute top-0 right-0 z-0">
+        <img src="./assets/line-right-BfLvAr-P.png" alt="Call to action background image 2" class="h-[1000px]">
+      </div>
+
+
+    </section>
+    <!-- *BANNER END -->
+
+    <!-- *CLIENT START -->
+    <!-- !there is a non smooth animation of the slider, get it right -->
+    <section class="relative flex overflow-x-hidden container w-full mx-auto mt-[14px] mb-[15px]">
+      <!-- First Marquee -->
+      <div class="flex gap-6 mr-8 animate-marquee whitespace-nowrap">
+        <span class="w-[152px]"><img src="./assets/client-1-ccMCqIiS.png" alt="client logo"
+            class="inline-block max-w-full h-[84px] lg:h-[130px] xl:h-[155px] object-contain" /></span>
+        <span class="w-[152px]"><img src="./assets/client-2-DUro2fLW.png" alt="client logo"
+            class="inline-block max-w-full h-[84px] lg:h-[130px] xl:h-[155px] object-contain" /></span>
+        <span class="w-[152px]"><img src="./assets/client-3-DRAdtW98.png" alt="client logo"
+            class="inline-block max-w-full h-[84px] lg:h-[130px] xl:h-[155px] object-contain" /></span>
+        <span class="w-[152px]"><img src="./assets/client-4-YxWXK2QI.png" alt="client logo"
+            class="inline-block max-w-full h-[84px] lg:h-[130px] xl:h-[155px] object-contain" /></span>
+        <span class="w-[152px]"><img src="./assets/client-5-BU8T6gE4.png" alt="client logo"
+            class="inline-block max-w-full h-[84px] lg:h-[130px] xl:h-[155px] object-contain" /></span>
+      </div>
+
+      <!-- Space between marquees -->
+      <!-- <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p> -->
+      <!-- <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p> -->
+
+      <!-- Second Marquee -->
+      <div class="absolute top-0 flex gap-6 ml-8 animate-marquee2 whitespace-nowrap">
+        <span class="w-[152px]"><img src="./assets/client-1-ccMCqIiS.png" alt="client logo"
+            class="inline-block max-w-full h-[84px] lg:h-[130px] xl:h-[155px] object-contain" /></span>
+        <span class="w-[152px]"><img src="./assets/client-2-DUro2fLW.png" alt="client logo"
+            class="inline-block max-w-full h-[84px] lg:h-[130px] xl:h-[155px] object-contain" /></span>
+        <span class="w-[152px]"><img src="./assets/client-3-DRAdtW98.png" alt="client logo"
+            class="inline-block max-w-full h-[84px] lg:h-[130px] xl:h-[155px] object-contain" /></span>
+        <span class="w-[152px]"><img src="./assets/client-4-YxWXK2QI.png" alt="client logo"
+            class="inline-block max-w-full h-[84px] lg:h-[130px] xl:h-[155px] object-contain" /></span>
+        <span class="w-[152px]"><img src="./assets/client-5-BU8T6gE4.png" alt="client logo"
+            class="inline-block max-w-full h-[84px] lg:h-[130px] xl:h-[155px] object-contain" /></span>
+      </div>
+    </section>
+    <!-- *CLIENT END -->
+
+    <!-- *IMPACT START -->
+    <section
+      class="mt-2 md:mx-4 md:mt-5 mx-[10px] px-[15px] bg-white bg-impactBgimg bg-center bg-no-repeat rounded-[19px] md:px-12 md:rounded-[62px] lg:px-32">
+      <div class="max-w-screen-xl mx-auto px-5 md:px-8 relative">
+
+        <div>
+          <!-- ?Title -->
+          <div class="pt-8 pb-[41px] text-center lg:pt-[67px] lg:pb-[60px]">
+            <h2 class="font-jakarta font-extrabold text-[clamp(30px,_5vw,_75px)] tracking-[-0.25px]">
+              Our
+              <span
+                class="font-semibold italic tracking-[-1.2px] bg-gradient-to-r from-[#00689D] via-[#26BDE2] to-[#19486A] bg-clip-text text-transparent">Impact</span>
+            </h2>
+          </div>
+
+          <!-- ?Columns Start-->
+          <div class="flex flex-col gap-[34px] xl:flex-row xl:flex-wrap xl:justify-evenly xl:gap-[20px]">
+            <!-- ?First Column[320px - 640px] -->
+            <div class="progress-container sm:hidden bg-impactColimg1 bg-center bg-no-repeat bg-cover rounded-[32px]">
+              <!-- *Image -->
+              <div class="p-[7px]">
+                <img src="./assets/col-1-CA3Pzdit.png" alt="Person Image" class="w-full" />
+              </div>
+              <!-- *Contents -->
+              <div class="flex flex-col gap-[14px] px-[7px] pt-[7px] pb-[30px] text-center">
+                <!-- ?Counter -->
+                <div
+                  class="flex items-center justify-center gap-[25px] py-[7px] sm:h-[80%] sm:flex-col text-white bg-lightBlueclr rounded-xl sm:rounded-[30px]">
+                  <span class="progressText font-semibold text-[26px]">0%</span>
+                  <p class="font-bold text-[13px] leading-[14px] text-white text-left sm:text-center">
+                    Speaker <br />
+                    Engagement
+                  </p>
+                </div>
+
+                <!-- ?Text -->
+                <div>
+                  <p class="font-medium text-xs h-[20%] leading-[17px] text-white">
+                    Turn your speakers into influential ambassadors, extending
+                    your event's reach globally
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- *First Column Desktop [640px - so on] -->
+            <div
+              class="gauge-container hidden sm:block bg-impactColimg1 bg-center bg-no-repeat bg-cover rounded-[32px] xl:w-[47%]">
+              <div class="flex">
+                <!-- *Image -->
+                <div class="p-[7px] xl:w-[120%]">
+                  <img src="./assets/col-1-CA3Pzdit.png" alt="Person Image" class="w-full xl:h-full" />
+                </div>
+                <!-- *Contents -->
+                <div
+                  class="flex flex-col justify-between items-center gap-[14px] px-[7px] pt-[7px] pb-[30px] text-center xl:pb-[20px]">
+                  <!-- ?Counter -->
+                  <div
+                    class="flex justify-center py-[20px] h-[80%] w-full text-white bg-lightBlueclr rounded-[30px] lg:pt-[50px] xl:pt-[50px] xl:pb-[70px]">
+                    <div class="relative size-[120px] xl:size-[100px]">
+                      <svg class="rotate-[135deg] size-full" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Background Circle (Gauge) -->
+                        <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-transparent"
+                          stroke-width="1.5" stroke-dasharray="75 100" stroke-linecap="round"></circle>
+
+                        <!-- Gauge Progress -->
+                        <circle class="gauge-progress stroke-current text-white transition-all duration-500 ease-in-out"
+                          cx="18" cy="18" r="16" fill="none" stroke-width="1.5" stroke-dasharray="0 100"
+                          stroke-linecap="round"></circle>
+                      </svg>
+
+                      <!-- Value Text -->
+                      <div class="absolute top-1/2 start-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <div class="flex items-center">
+                          <span class="gauge-value font-normal text-[40px] xl:text-[30px] text-white">0</span>
+                          <span class="font-normal text-[40px] text-white block xl:text-[30px]">%</span>
+                        </div>
+                      </div>
+                      <span class="font-normal text-[22px] text-white block sm:leading-7">Speaker Engagement</span>
+                    </div>
+                  </div>
+
+                  <!-- ?Text -->
+                  <div>
+                    <p class="font-medium text-xs h-[20%] leading-[17px] text-white">
+                      Turn your speakers into influential ambassadors, extending
+                      your event's reach globally
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ?Second Column[320px - 640px] -->
+            <div class="progress-container sm:hidden bg-impactColimg2 bg-center bg-no-repeat bg-cover rounded-[32px]">
+              <!-- *Image -->
+              <div class="p-[7px]">
+                <img src="./assets/col-2-CgB07eGf.png" alt="Person Image" class="w-full" />
+              </div>
+              <!-- *Contents -->
+              <div class="flex flex-col gap-[14px] px-[7px] pt-[7px] pb-[30px] text-center">
+                <!-- ?Counter -->
+                <div
+                  class="flex items-center justify-center gap-[25px] py-[7px] sm:h-[80%] sm:flex-col text-white bg-yellowclr rounded-xl sm:rounded-[30px]">
+                  <span class="progressText font-semibold text-[26px]">0%</span>
+                  <p class="font-bold text-[13px] leading-[14px] text-white text-left sm:text-center">
+                    Time Saved
+                  </p>
+                </div>
+                <!-- ?Text -->
+                <div>
+                  <p class="font-medium text-xs h-[20%] leading-[17px] text-white">
+                    Let us handle the storytelling while you focus on creating
+                    unforgettable moments.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- *Second Column Desktop [640px - so on] -->
+            <div
+              class="gauge-container hidden sm:block bg-impactColimg2 bg-center bg-no-repeat bg-cover rounded-[32px] xl:w-[47%]">
+              <div class="flex">
+                <!-- *Image -->
+                <div class="p-[7px] xl:w-[120%]">
+                  <img src="./assets/col-2-CgB07eGf.png" alt="Person Image" class="w-full xl:h-full" />
+                </div>
+                <!-- *Contents -->
+                <div
+                  class="flex flex-col justify-between items-center gap-[14px] px-[7px] pt-[7px] pb-[30px] text-center xl:pb-[20px]">
+                  <!-- ?Counter -->
+                  <div
+                    class="flex justify-center py-[20px] h-[80%] w-full text-white bg-yellowclr rounded-[30px] lg:pt-[50px] xl:pt-[50px] xl:pb-[70px]">
+                    <div class="relative size-[120px] xl:size-[100px]">
+                      <svg class="rotate-[135deg] size-full" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Background Circle (Gauge) -->
+                        <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-transparent"
+                          stroke-width="1.5" stroke-dasharray="75 100" stroke-linecap="round"></circle>
+
+                        <!-- Gauge Progress -->
+                        <circle class="gauge-progress stroke-current text-white transition-all duration-500 ease-in-out"
+                          cx="18" cy="18" r="16" fill="none" stroke-width="1.5" stroke-dasharray="0 100"
+                          stroke-linecap="round"></circle>
+                      </svg>
+
+                      <!-- Value Text -->
+                      <div class="absolute top-1/2 start-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <div class="flex items-center">
+                          <span class="gauge-value font-normal text-[40px] xl:text-[30px] text-white">0</span>
+                          <span class="font-normal text-[40px] text-white block xl:text-[30px]">%</span>
+                        </div>
+                      </div>
+                      <span class="font-normal text-[22px] text-white block sm:leading-7">Time <br />
+                        Saved</span>
+                    </div>
+                  </div>
+
+                  <!-- ?Text -->
+                  <div>
+                    <p class="font-medium text-xs h-[20%] leading-[17px] text-white">
+                      Let us handle the storytelling while you focus on creating
+                      unforgettable moments.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ?Third Column[320px - 640px] -->
+            <div
+              class="mb-[37px] bg-custom-gradient rounded-[32px] sm:flex items-center justify-between 1.5xl:w-full 1.5xl:mx-[20px]">
+              <!-- *Image -->
+              <div>
+                <img src="./assets/impact-image-BTOmFilq.png" alt="Person Image" class="w-[250px]" />
+              </div>
+              <!-- *Contents -->
+              <div
+                class="flex flex-col gap-[14px] px-[7px] pt-[7px] pb-[30px] text-center sm:text-right sm:w-[70%] sm:pr-[47px] 1.5xl:pt-[56px] 1.5xl:pb-[61px]">
+                <!-- ?Text -->
+                <p
+                  class="mx-auto font-light text-[25px] leading-[28px] text-white w-[150px] sm:mx-0 sm:w-full 1.5xl:pl-[310px] 1.5xl:text-[50px] 1.5xl:leading-[51px] 1.5xl:tracking-[-1.84px]">
+                  Every Story Plants a Tree
+                </p>
+                <p
+                  class="mx-auto font-medium text-xs leading-[17px] text-white w-[160px] sm:mx-0 sm:w-full lg:pl-32 1.5xl:pl-[350px] 1.5xl:text-base">
+                  Make a tangible difference. For every highlight created, we
+                  plant a tree through Seedballs Kenya.
+                </p>
+              </div>
+            </div>
+
+            <!-- ?Columns End-->
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- *IMPACT END -->
+
+    <!-- * WHY UCHOP START -->
+    <section class="mt-2 mx-[10px] md:mx-4 md:mt-5 md:px-0 lg:px-0 rounded-[19px]">
+      <div class="max-w-screen-xl mx-auto px-5 md:px-8 relative">
+
+        <!-- *Title -->
+        <h2
+          class="mt-[37px] mb-[29px] font-jakarta font-extrabold text-[clamp(30px,_5vw,_75px)] tracking-[-0.25px] text-center lg:text-left xl:px-[148px]">
+          why <span
+            class="font-semibold italic tracking-[-1.2px] bg-gradient-to-r from-[#00689D] via-[#26BDE2] to-[#19486A] bg-clip-text text-transparent">uchop?</span>
+        </h2>
+
+        <!-- *Why Uchop Columns(Carousel) (Mobile) -->
+        <div
+          class="lg:hidden block flex flex-col gap-10 sm:gap-5 sm:flex-wrap sm:flex-row sm:justify-evenly md:gap-none">
+          <!-- *First Column -->
+          <div class="sm:w-[47%] md:w[50%]">
+            <!-- ?1 Image Icon -->
+            <div>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANBSURBVHgB1ZnNTxNBGMafmTZiEz5WubQmkuXmDThJYol7JF6EGE08AXej8egJ8GD0on8CeDF6Ai/Gm0sswo36F1haku4FGCJJwXR3fKelpbUftMuu3f0lzX7NpM9O3n1n5nkZLoGmGVokZhsSuCshdQY5DjBNPTprIuiXoeeCgaUZsGEXIqYQpoBLGFygxZMGY1ikzuM14jqGXmCdg73fz39fR5d0JXg4MTUj4byjbjo8QWaYlMv71o/VTnt0JFiLT+qMRVeosQF/SDuyOCus7cxFDSMXNdASyWec8Y8k9hb8I84Yn48N3DwtHOe22zVsK/j6jaSK09d0ehX+Q//BpmODIyj8zm60atRSsBJLX8cS/j9GO9FNBfdQbIWWohsEq5g9C4NeY1BMH/0b03VZQmUDzqI7cJFbfUJQ9piozR689imlrjUER6xCU+m09kZV8HB8av5s5goUKverCatyXRUsmbOIgFKeXcuUBJffgOkILExX6xd1VhLsQM4h4KjFVumo6YbGT4uH8IDBwQEMDfXX3cvl8vAI4RSio9HIaWk96wmvXj7B40f3qtfZnIWJ2w/hERqu2AanhbcBj8hlLaS2dpDbs+AHPCINTmljDB7x5u0K7j94ig+fvsAP1K6GRjhQE0VbGPiYyhI6QoPUlODQjDChcYQMJdj1lrsHCBIsQyOYEkSGsgRLIyxIGmHKw7sICbSe+MnK5ohcQwhwbDbL7b6IibB8eH8iJhcZk4w6BD6OKQo+KxOxlIdtiWUEHGnzVXWs7pqvJe78IktURwCh0c0c5jdH1fn5ng78OQKKJIezcl7nSwwnkt+kfw6lW9IH+dRE5aJuLWHL4gKClTGUkTJbe6POqjo53hN9ZHlSLE8jEMgXh9bW19o7Dd7aCXlZsf4R0tzj0KDMdWBtNnh8Td3LwnHW7KnoktjUUrNHLf3hnoluI1bR1oFXoimmj0j1JPx34YWK2WZhUEs3RZk1v8xCKWFKFBc6Kcp0VfbSlMNJpqFXM6KawdSEJbqo17krLNKSlKqec9R5pvveEDSiaZqgloWVMtElrgRXUKVbUOmWk3vEJMYcRgZ02TY4L91KKSQrlW13HTATlyzd/gVNbityndhIJQAAAABJRU5ErkJggg==" alt="Icon of 1" width="44" height="44" class="mx-auto mb-[-20px]">
+            </div>
+
+            <!-- ?First Column Contents -->
+            <div class="flex flex-col gap-12 p-9 bg-white rounded-3xl">
+
+              <!-- ?Contents -->
+              <div class="text-center">
+                <h2 class="font-medium text-[20px] leading-[25px] text-primaryclr">Personalised, Interactive Highlights
+                </h2>
+
+                <p class="mt-[18px] font-medium text-xs leading-[17px]">Turn live moments into shareable stories within
+                  minutes.</p>
+                <br>
+                <p class="mb-[18px] font-medium text-xs leading-[17px]">Our cutting-edge platform creates personalized
+                  clips that your audience will love.</p>
+                <!-- ?Button -->
+                <div>
+                  <a href="#"
+                    class="inline-flex items-center py-1 pl-5 pr-1 font-semibold text-[13px] bg-secondaryclr text-white rounded-[50px] hover:bg-opacity-95 transition-all duration-300 group">
+                    See It in Action
+                    <span
+                      class="inline-flex ml-3 p-[14px] bg-slate-700 rounded-full transition-all duration-300 group-hover:rotate-45">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd"
+                          d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- ?Image -->
+              <div>
+                <img src="./assets/whyus-img1-D3dS8DHL.png" alt="Why us image">
+              </div>
+
+            </div>
+          </div>
+
+          <!-- *Second Column -->
+          <div class="sm:w-[47%] md:w[50%]">
+            <!-- ?1 Image Icon -->
+            <div>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO4SURBVHgB1ZnPb1RVFMe/53aczjSiLzExBiNMTUytidIujTGOK2tiDF1rIl3V4kL6F7SzceEGEyO1bsDEmBAXICt3jLolaWFBKSQwLYSwgPD49Uqn9B7OufDKDLSdX/cxj0/SzJ375qXfuXPuOe9+D6EDgsNzQXWlr0iGPrHgAhhDxAhA8qcwQhhUmCk0hHm2/G82H5XDseEQbUJog9zPC0XK9EwR89CGuBZgwnGy+D3aP3AcLdKS4L5Di3vlnx2UmwrwQ4VgS/cmBo80e0NTgnMzCwVCz2ECF5EEjHlLdvT+xGCl0UdNow/kfz3/vWEzl5hYhTBkYObyh84daPzRbeibvTAFa6fxXDHT0cQ7pa2ubim4O2Jjtha9qeDuio3ZXPQzgjVmJV39hBTAzJMr+9+t01InWLOBbrB2cmtChBZ2uDZ71GUJQ+ZYisQqgabT2okNwblfFvZpaUXK0HSqBSt+vyGYjJlCWpHqGg+dYP0GHsttEhT0+UUHj1bY4BukHH3Ycq/BwUtBNVe9CY98vLMPu3ZksHznAf6/GsETYTYX9WeqvdUiPPH+a704OvImdovYmKU7axg5cdmJ7xB59u4tGiI/DzW7dryEf758y4m9tWrx39UVN79b5n/79A34gMgUjSWzBx4IsgbLd9dkJdfw3p8X8bms6vjJa+6ahkjtqreLlc2XkTznpVCcubGKD/9aqpsLZaVjljoPCclutMeI7AIS4NVegx8/et2N/1i8DU8EJolSrGLjeNYQ+eHUdXgiaHjiaIejn+3EB5Ixlh9nCB/hEGPcUdwjs5IRdJMlIVYIjZyCvQlWsV8PvOLSWgJi9bBayZAYHDIooEO+KLzsxCoaw2e/ervu+siJKx1XPSY1ZJiX4AEVmTSS0k6Te9YkHMOLAK+Pmuxqtux74yVFNr9aNuFkf8iG5pFyGPy3mogu8JjXS0g5xPaIe40n8jOLl1J86qhEEwP9OnhypmNMIqWow/lkXIOYKCclzRWRJqRORN8ODMdv65KnxPJYqjKGaLFsR2un6gSrw8I9nJoNKJmh9LRn/Ex5WhlXL8t2X7S1pad9NWVru3VmYVq+T3fMFREbfTc4vdml7Q3tbojeRqzSsMeRnz13gNZpKnGTUDaYxuxmYVBL000Z52wmZBYyqMxYH2umKdNS20uE7yMJEZ9tL9n2k9F48/26thqLrl8nfpxUx70t36w/PdG8rKimrDJapC3BMRutW3GP1JBxHofaBjWtW3cEk2pl5KAgLdxyp63bh2B9e0uUz35KAAAAAElFTkSuQmCC" alt="Icon of 1" width="44" height="44" class="mx-auto mb-[-20px]">
+            </div>
+
+            <!-- ?Second Column Contents -->
+            <div class="flex flex-col gap-12 pt-9 pb-5 px-3 bg-white rounded-3xl">
+
+              <!-- ?Contents -->
+              <div class="text-center">
+                <h2 class="px-2 font-medium text-[20px] leading-[25px] text-primaryclr md:px-14">Real-Time Engagement
+                </h2>
+
+                <p class="mt-[18px] font-medium text-xs leading-[17px]">Let attendees dive deeper with interactive
+                  videos.
+                </p>
+                <br>
+                <p class="mb-[18px] font-medium text-xs leading-[17px]">Encourage live feedback and participation,
+                  making
+                  every viewer an active part of the event.</p>
+                <!-- ?Button -->
+                <div>
+                  <a href="#"
+                    class="inline-flex items-center py-1 pl-5 pr-1 font-semibold text-[13px] bg-[#0A97D9] text-white rounded-[50px] hover:bg-opacity-95 transition-all duration-300 group">
+                    Engage Your Audience Today
+                    <span
+                      class="inline-flex ml-3 p-[14px] bg-lightBlueclr rounded-full transition-all duration-300 group-hover:rotate-45">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd"
+                          d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- ?Image -->
+              <div>
+                <img src="./assets/whyus-img2-DzSx1lzA.png" alt="Why us image" class="w-full">
+              </div>
+
+            </div>
+          </div>
+
+          <!-- *Third Column -->
+          <div class="sm:w-[47%] md:w[50%]">
+            <!-- ?1 Image Icon -->
+            <div>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQgSURBVHgBzZlLaFNbFIb/ddLbtNe2N3AH11x64fRqRRBsRYtVEI/gI+qkBXHiqwqiduKjIyetxYkiYifaOlJBQUSpDtSAgnFkQdEiCIJVI1aqghqfMdGe7do7TdrYNDY5O+Z8cHqeaf5s1llr7X8THOCzdvnKy2MWbGMxIEwQ6iHg471PPSAQgUFhtRfoh2HfjEa9oUioK4I8IeTB1MB2i+DpgBD1KXG5IHARhjg1dLX7InIkJ8H+lTuaIOgIH5rQQ1gAnS+Dx05O9gOTEswjavKInuChsVAIOFwE2c0vgz3hXz3q+dUD/hWtOwl0ln/aTBQKwlQiaqmsnRf7NHCnL9ujWQX/G2jt4H92gLcyFB7+DgpUTW/Ax4HbNyd6aELBUizH1z78fqxsojMKLqLYJBOKHidYxqwKg+JjcUy//zmm07KEygbCuJdXbi0EhIgQ9pyx2cNIuy88va4RK+GqyRnqxNhLKcE8ui2suB6ugyxVsEZICSYYHXArieqqUIL9y9UvMOFeTNm/yIPECBNtgsvhWFYRQCa3iLGy+Ds4pGpKOf6a8mfGe+8/f8GHz1E4gjNGNFpaUxIr5X42vy4zja1NS9C2fnXGe4dPX8bhM1fgCM4Ypay1BB6y+MQxz1+/xa37j1LnVRXlmPV/deLeq7fQgYeIBQuqgwbF5671qU0iw+PCwV2J69f71KYH2zTUlEYzXW0bMGtaNR48foH2ngvQBhl1hpqLaaRz2xoEFtSp46qKMhXb2uAq7KmsbdDa6GxctQixb98Qj3/Hf//8jYWzazlDfMXdh0+hgTLyB1o1vHKZ6dqzAWuXNfJL9wbzW9qhA0NNwTWRzApJHjwZhFY4FxvyDxwis8LD84dw7ehetK1bnbqWjN9BTWkNNsIlyuAgZ32ErGLBW/exdmkjF49V2NpsseDRqtd+/Dx0IIginsoZDQv4uBEOkYJlsZg7swbe0j/UNVkwtuw/zi9cGDoggUukOjWDeqGRas4OkkF+2XQybIvmEm/cG4p54xGdMw3dQpPEWasRlsYciX64HWFfkiai6ocFRCdczrCgk3Kf6iu5gMhSZMKdhIeCx2rkweis2Ra74VKkw5k8Tuvc/YEdN+QsFW6CqH/o6tE5ydM0X4JjebPOUu0YIY2U4eaxl9KsKraFIpUz5sWkiwg3YIi97PoEx14a561JL6tiegNxrFgoIglnvntc65vRvfw0cDtUTNEjywj7Mt2b0B8uluhsYiVZHXgpWlqe3CY1FtyFV0tkMma7s86AJr8oI4xetQ5XAAQoxLVs82QWZXJyUKTDOWIamtBDmPuY3bms1+Vl+aiW1MN+nEBTzh+WuZWLAY8ox2pPCDniyKNSS7fS6mJHhkXUkfI41BKub1QcIvzm9vP05hmvnIaicWdLtz8Abyh8qjqCbasAAAAASUVORK5CYII=" alt="Icon of 1" width="44" height="44" class="mx-auto mb-[-20px]">
+            </div>
+
+            <!-- ?Third Column Contents -->
+            <div class="flex flex-col gap-12 p-9 bg-white rounded-3xl">
+
+              <!-- ?Contents -->
+              <div class="text-center">
+                <h2 class="px-2 font-medium text-[20px] leading-[25px] text-primaryclr">Personalised, Interactive
+                  Highlights</h2>
+
+                <p class="mt-[18px] font-medium text-xs leading-[17px]">Turn live moments into shareable stories within
+                  minutes.</p>
+                <br>
+                <p class="mb-[18px] font-medium text-xs leading-[17px]">Our cutting edge platform creates personalized
+                  clips that your audience will love.</p>
+                <!-- ?Button -->
+                <div>
+                  <a href="#"
+                    class="inline-flex items-center py-1 pl-5 pr-1 font-semibold text-[13px] bg-[#19486A] text-white rounded-[50px] hover:bg-opacity-95 transition-all duration-300 group">
+                    See It in Action
+                    <span
+                      class="inline-flex ml-3 p-[14px] bg-[#456b86] rounded-full transition-all duration-300 group-hover:rotate-45">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd"
+                          d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- ?Image -->
+              <div>
+                <img src="data:image/png;base64,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" alt="Why us image" class="w-full">
+              </div>
+
+            </div>
+          </div>
+
+          <!-- *Fourth Column -->
+          <div class="sm:w-[47%] md:w[50%]">
+            <!-- ?1 Image Icon -->
+            <div>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOLSURBVHgB1Zm/b9NQEMe/9+yGloAUCYmxBAY2KEiMNJiRAYlODCABEyN0hKXtgthgZQIkmAEJsTYkfwAFhBgYaLuBhHAFaUsS+7izk5DQH/n13Lofycmzn5N883zv3r07whDwfC4XOFWPDJ1j5jwxTjFRTrpyjVt8AhZZ3wkLHPJbJ8gU6bzvY0AIA1Arj3oEZ0aap9rE9QG/BOOpW1h9iT7pS3C9dPASmeABM+VhA8IiQsy5hcqT3j/SA2vzo/kR13ksTQ8JoOZSrQVTY+fXF7vda7rdEJTHbonYd0hIrMJi+/ob1dLY7W73bjvCQXn/DINmsYMQeNaZXJ3bun8LdkNsk+1Ebyp4N8U22Ur0BsFqswzzECkg5HA6U1jr0NIhuOENdIIN4FsTwa/Vg9Pt3qPDS2Rc5wXSI1bJNdxpi5bgeil7neOVK214umA1T1qCyfAM0ooJH7Sa+qL/wNpymwSMfK18wNNmPMIUXEPKETcXWQBFIaJb+wnL0OiRuFFfAdcHjibb8Z36yFE3cAIPllGx5synqM0rZfDHC7BAFHsb5tCDZcyJN0gCmWeeIYMJWITG7wL7jkSmYB3ivCGLCwUdugijgteXwd+fwTbG0ISRxSIPC0R2e+x+1A4+X5aJZn+EJW7OqVuzMsI0ficyBV6+B1Q+IiFyXXccvUCHr0aHwutL0r4Cyp6I++RPxOcnYQNXDnWSw43y6HiraY4/2tCn18Jo5D9gSHyXmP1GLmFwRAh/e95xiQ7IiOoo6wQUX2xBrMbCiy7LjhVDTjz+8To6Or5cvIURwfxnCeGXm7CBJmQMh7SEPQKHeE9RrEnhC+wFmKeMEzhFxBMv9WhezjQScwtIOZJsfKVaIz8sW/o5pBzxEE8a7zFBaf9XcW95pBEWd1aoHNWm+XfNmUZ6aVlAR16iXs7OI8Gk3yCIwAVnsnK6ed4RS0jS4gbS5DEYfrUeTLVf6hCsGZaQkZoJGBrM/Z8z3hCtZQqVh2nwGqohc7ayIce3ZbpV8gCzza31TqNiRyZ/z27Wt21CezdEbydW6VrjqJayt2Xjp6KTTRLKBFOb3cwM2um5KKOZzQSThUX1UL0UZfose2Wvq4lYWxFlBZN5P+0WfvVcrxuosBiHpJqPo0t9f1gePbQqGttqEX0ykODWb0el28BjCqUyignNcchWPC/fmmuKkyficyxwidgUNZwdpnT7F+yLYJe0UeHvAAAAAElFTkSuQmCC" alt="Icon of 1" width="44" height="44" class="mx-auto mb-[-20px]">
+            </div>
+
+            <!-- ?Fourth Column Contents -->
+            <div class="flex flex-col gap-12 p-9 bg-white rounded-3xl">
+
+              <!-- ?Contents -->
+              <div class="text-center">
+                <h2 class="px-2 font-medium text-[20px] leading-[25px] text-primaryclr">Personalised, Interactive
+                  Highlights</h2>
+
+                <p class="mt-[18px] font-medium text-xs leading-[17px]">Turn live moments into shareable stories within
+                  minutes.</p>
+                <br>
+                <p class="mb-[18px] font-medium text-xs leading-[17px]">Our cutting edge platform creates personalized
+                  clips that your audience will love.</p>
+                <!-- ?Button -->
+                <div>
+                  <a href="#"
+                    class="inline-flex items-center py-1 pl-5 pr-1 font-semibold text-[13px] bg-yellowclr text-white rounded-[50px] hover:bg-opacity-95 transition-all duration-300 group">
+                    See It in Action
+                    <span
+                      class="inline-flex ml-3 p-[14px] bg-[#fdce39] rounded-full transition-all duration-300 group-hover:rotate-45">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd"
+                          d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- ?Image -->
+              <div>
+                <img src="data:image/png;base64,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" alt="Why us image" class="w-full">
+              </div>
+
+            </div>
+          </div>
+
+          <!-- *Fifth Column -->
+          <div class="sm:w-[47%] md:w[50%]">
+            <!-- ?1 Image Icon -->
+            <div>
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQtSURBVHgBzZlbiFNHGMf/cxLabtnNHt2XpJgQoQulbrv6ZmsWz0th60tdSlt8KF6g0JdWimCpfVj3oUUFUcQHQfCCIKLCquDtRSOutycDriK4uDFZSF50J7uBuLDJ+M3k4ombjZtkjjk/CDNnzhzyP5Mv38z8h6EFTNMyPR15SwDrBUSYQawGmClvlbpw+sTpPmdgMQbcyuc8Uc6jHE3C0ASmP2IxhmF6eLVN3JKhF7hggJ18mbp9AQ3SkOCewMBGgcIBeiwMLYg4E2LkZfruiaU+sSTBpn9tmDHvcepswRliBTE/xNP34+/r6HlfBzMQ2W4w4wyJ/QLO4WfM2NLRFZzLZZP363WsK3j5ZxEZp3uo+gmch76DDXb4QsjNJm4t1mlRwVIs/Tt248Nj1RNdU3AbxZZZVPQCwTJmS2HQbiyK6cy7MV2VJWQ2MJj3IZrIrQ7BKXussWcPw36XUtco3CNWYsp0am+oCO7xD2wpzVyuQuZ+OWGVryuCBSsMw6UUZ9ciSnDxDVgYroWF5fpF1pTgAsRmuBy52FKlGbZMY25+GhoIBgM12zOZLGZmZtEivJDzrvR65tR6Vgunjv2Hr1b1Lmjfu/8Y9u0/jhYx8VHe8tLC24ImymLH7j2sak8m09CB4RGWl9JGv44R7iuJHX88gR9+/BNOIHc1NMJ6Joru7k5VZjKz2DA4oK4fjU/QCzyDLhiMfi+VYWigb9Xnqlz37Rr1KXPk6Dn8O3wIehCmTGtaRji0wq/KmZksTp+9isvXb6vr33/7CTt3bIUmTLY8ENGSJEJBP/q+7FUhkJgq/skOH9yFTT9/r+J6/Xd6RMuQkFvulkc5QZlAUJQlp9K2tpQqfb5OaIJTSIimPQI7l84fQuzBWfxd+vl9vi5s+mWDqiemUtABhULcoFGJQQOP6GeX7NyxDc+fXsXk0yuVuP5j+//QggD3fNoV+oaqa9EiN6IPIBPP13296C6FgJwwft22C+NPJqADWk9cZEVzRIxCI8EVxTVFUlMolCnk2VB58TMJd+00akKLn2UGj0fJqIOWOHYSioKL0kRU6+G8wAhcjsgbJ2RZ2TUvC6ybJEs0DBdCoxufTt1ZKetv93Qw/oJLEeRwlutVvkRPIHJTOOdQNkvsVWqsspqq8iXyYl5OU1pmPk1II2XI3lBlVb3OTvGPyfKkWB6EKxD/TKfvXbO3LPDWXpOX1dEZIs1tDg3KXK/SdxZ4fDXdy1w2EW2raCV2bHetW4v6w20TXUespK4DL0VTTGdItVwcOe3CcxmztcLATiOHMqNOmYVCICowv3UphzINHXuZ0uEk01DXjChnMDlh8QbO65o7WKQlKZ16bqaHNzb+NDiNaIwmqBGeHouiQZoSXEYe3YKObg1yj5hAf4HRrrZoG7w9uhWCC6aObV8UwKJo8ej2DSuze7Gl0EGtAAAAAElFTkSuQmCC" alt="Icon of 1" width="44" height="44" class="mx-auto mb-[-20px]">
+            </div>
+
+            <!-- ?Fifth Column Contents -->
+            <div class="flex flex-col gap-12 p-9 bg-white rounded-3xl">
+
+              <!-- ?Contents -->
+              <div class="text-center">
+                <h2 class="px-2 font-medium text-[20px] leading-[25px] text-primaryclr">Personalised, Interactive
+                  Highlights</h2>
+
+                <p class="mt-[18px] font-medium text-xs leading-[17px]">Turn live moments into shareable stories within
+                  minutes.</p>
+                <br>
+                <p class="mb-[18px] font-medium text-xs leading-[17px]">Our cutting edge platform creates personalized
+                  clips that your audience will love.</p>
+                <!-- ?Button -->
+                <div>
+                  <a href="#"
+                    class="inline-flex items-center py-1 pl-5 pr-1 font-semibold text-[13px] bg-secondaryclr text-white rounded-[50px] hover:bg-opacity-95 transition-all duration-300 group">
+                    See It in Action
+                    <span
+                      class="inline-flex ml-3 p-[14px] bg-[#3f4461] rounded-full transition-all duration-300 group-hover:rotate-45">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd"
+                          d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- ?Image -->
+              <div>
+                <img src="data:image/png;base64,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" alt="Why us image" class="w-full">
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- *Carousel (Desktop) -->
+        <div class="hidden lg:block relative mt-[47px] mb-[100px] w-full" id="indicators-carousel"
+          data-carousel="static">
+          <!-- Carousel wrapper -->
+          <div class="relative h-auto overflow-hidden rounded-lg">
+
+            <!-- Item 1 -->
+            <div class="duration-700 ease-in-out xl:px-[100px] 1.5xl:px-0" data-carousel-item>
+              <div class="flex items-center gap-12 my-[60px]">
+                <!-- *Content -->
+                <div
+                  class="py-[55px] px-[63px] w-[60%] h-full bg-white rounded-[56px] xl:py-[50px] 1.5xl:py-[93px] 1.5xl:w[40%]">
+                  <h2 class="font-medium text-[39px] leading-[40px] text-primaryclr xl:pr-0">Personalised, Interactive
+                    Highlights
+                  </h2>
+
+                  <p class="mt-[42px] font-medium text-[18px] leading-[27px] xl:pr-[20px]">Turn live moments into
+                    shareable stories
+                    within minutes.</p>
+                  <br>
+                  <p class="mb-[18px] font-medium text-[18px] leading-[27px] xl:pr-0">Our cutting-edge platform creates
+                    personalized clips that your audience will love.</p>
+
+                  <div class="text-right">
+                    <a href="#"
+                      class="inline-flex items-center py-3 pl-6 pr-1 font-semibold text-[13px] bg-secondaryclr text-white rounded-[50px] hover:bg-opacity-95 transition-all duration-300 group xl:py-4 xl:pl-7 xl:text-base">
+                      See It in Action
+                      <span
+                        class="inline-flex ml-3 p-[14px] bg-slate-700 rounded-full transition-all duration-300 group-hover:rotate-45">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                          <path fill-rule="evenodd"
+                            d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                            clip-rule="evenodd" />
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <!-- *Image -->
+                <div class="w-[40%] 1.5xl:w[50%]">
+                  <img src="./assets/whyus-img1-D3dS8DHL.png" alt="Why us image" class="w-[445px] h-[460px] 1.5xl:h-[510px]">
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out xl:px-[100px] 1.5xl:px-0" data-carousel-item>
+              <div class="flex items-center gap-12 my-[60px]">
+                <!-- *Content -->
+                <div
+                  class="border-2 py-[55px] px-[63px] w-[60%] h-full bg-white rounded-[56px] xl:py-[50px] 1.5xl:py-[93px] 1.5xl:w[40%]">
+                  <h2 class="font-medium text-[39px] leading-[40px] text-primaryclr xl:pr-0">Real-Time Engagement</h2>
+
+                  <p class="mt-[42px] font-medium text-[18px] leading-[27px] xl:pr-[20px]">Let attendees dive deeper
+                    with
+                    interactive videos.</p>
+                  <br>
+                  <p class="mb-[18px] font-medium text-[18px] leading-[27px] xl:pr-0">Encourage live feedback and
+                    participation, making every viewer an active part of the event.</p>
+
+                  <div class="text-right">
+                    <a href="#"
+                      class="inline-flex items-center py-3 pl-6 pr-1 font-semibold text-[13px] bg-[#0A97D9] text-white rounded-[50px] hover:bg-opacity-95 transition-all duration-300 group xl:py-4 xl:pl-7 xl:text-base">
+                      Engage Your Audience Today
+                      <span
+                        class="inline-flex ml-3 p-[14px] bg-lightBlueclr rounded-full transition-all duration-300 group-hover:rotate-45">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                          <path fill-rule="evenodd"
+                            d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                            clip-rule="evenodd" />
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <!-- *Image -->
+                <div class="border-2 w-[40%] 1.5xl:w[50%]">
+                  <img src="./assets/whyus-img2-DzSx1lzA.png" alt="Why us image" class="w-[445px] h-[460px] 1.5xl:h-[510px]">
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out xl:px-[100px] 1.5xl:px-0" data-carousel-item>
+              <div class="flex items-center gap-12 my-[60px]">
+                <!-- *Content -->
+                <div
+                  class="py-[55px] px-[63px] w-[60%] h-full bg-white rounded-[56px] xl:py-[50px] 1.5xl:py-[93px] 1.5xl:w[40%]">
+                  <h2 class="font-medium text-[39px] leading-[40px] text-primaryclr xl:pr-0">Seamless Integration</h2>
+
+                  <p class="mt-[42px] mb-[72px] font-medium text-[18px] leading-[27px] xl:pr-[20px]">Effortlessly embed
+                    captivating content into your website, app, newsletters, and social media.
+                    Your brand shines through every story we help you tell.
+                  </p>
+
+                  <div class="text-right">
+                    <a href="#"
+                      class="inline-flex items-center py-3 pl-6 pr-1 font-semibold text-[13px] bg-[#19486A] text-white rounded-[50px] hover:bg-opacity-95 transition-all duration-300 group xl:py-4 xl:pl-7 xl:text-base">
+                      Integrate Effortlessly
+                      <span
+                        class="inline-flex ml-3 p-[14px] bg-[#456b86] rounded-full transition-all duration-300 group-hover:rotate-45">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                          <path fill-rule="evenodd"
+                            d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                            clip-rule="evenodd" />
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <!-- *Image -->
+                <div class="w-[40%] 1.5xl:w[50%]">
+                  <img src="data:image/png;base64,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" alt="Why us image" class="w-[445px] h-[460px] 1.5xl:h-[510px]">
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out xl:px-[100px] 1.5xl:px-0" data-carousel-item>
+              <div class="flex items-center gap-12 my-[60px]">
+                <!-- *Content -->
+                <div
+                  class="py-[55px] px-[63px] w-[60%] h-full bg-white rounded-[56px] xl:py-[50px] 1.5xl:py-[93px] 1.5xl:w[40%]">
+                  <h2 class="font-medium text-[39px] leading-[40px] text-primaryclr xl:pr-0">Instant Distribution</h2>
+
+                  <p class="mt-[42px] font-medium text-[18px] leading-[27px] xl:pr-[20px]">Send personalised highlights
+                    directly to speakers and attendees via email or SMS.</p>
+                  <br>
+                  <p class="mb-[18px] font-medium text-[18px] leading-[27px] xl:pr-0">Extend your event's reach
+                    instantly
+                    and effortlessly.</p>
+                  <!-- *Button -->
+                  <div class="text-right">
+                    <a href="#"
+                      class="inline-flex items-center py-3 pl-6 pr-1 font-semibold text-[13px] bg-yellowclr text-white rounded-[50px] hover:bg-opacity-95 transition-all duration-300 group xl:py-4 xl:pl-7 xl:text-base">
+                      Distribute Instantly
+                      <span
+                        class="inline-flex ml-3 p-[14px] bg-[#fdce39] rounded-full transition-all duration-300 group-hover:rotate-45">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                          <path fill-rule="evenodd"
+                            d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                            clip-rule="evenodd" />
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <!-- *Image -->
+                <div class="w-[40%] 1.5xl:w[50%]">
+                  <img src="data:image/png;base64,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" alt="Why us image" class="w-[445px] h-[460px] 1.5xl:h-[510px]">
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out xl:px-[100px] 1.5xl:px-0" data-carousel-item>
+              <div class="flex items-center gap-12 my-[60px]">
+                <!-- *Content -->
+                <div
+                  class="py-[55px] px-[63px] w-[60%] h-full bg-white rounded-[56px] xl:py-[50px] 1.5xl:py-[93px] 1.5xl:w[40%]">
+                  <h2 class="font-medium text-[39px] leading-[40px] text-primaryclr xl:pr-0">Intelligent Insights</h2>
+
+                  <p class="mt-[42px] font-medium text-[18px] leading-[27px] xl:pr-[20px]">Get real-time analytics to
+                    understand and boost engagement.</p>
+                  <br>
+                  <p class="mb-[18px] font-medium text-[18px] leading-[27px] xl:pr-0">Make informed decisions on the fly
+                    with actionable data.</p>
+                  <!-- *Button -->
+                  <div class="text-right">
+                    <a href="#"
+                      class="inline-flex items-center py-3 pl-6 pr-1 font-semibold text-[13px] bg-secondaryclr text-white rounded-[50px] hover:bg-opacity-95 transition-all duration-300 group xl:py-4 xl:pl-7 xl:text-base">
+                      Unlock Insights Now
+                      <span
+                        class="inline-flex ml-3 p-[14px] bg-[#3f4461] rounded-full transition-all duration-300 group-hover:rotate-45">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                          <path fill-rule="evenodd"
+                            d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                            clip-rule="evenodd" />
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <!-- *Image -->
+                <div class="border-2 w-[40%] 1.5xl:w[50%]">
+                  <img src="data:image/png;base64,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" alt="Why us image" class="w-[445px] h-[460px] 1.5xl:h-[510px]">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Slider indicators (aligned vertically to the left) -->
+          <div
+            class="absolute top-1/2 left-0 z-30 flex flex-col space-y-3 transform -translate-y-1/2 ml-[-30px] xl:left-[105px] 1.5xl:left-0">
+            <button type="button" class="w-14 h-14" aria-current="true" aria-label="Slide 1"
+              data-carousel-slide-to="0"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANBSURBVHgB1ZnNTxNBGMafmTZiEz5WubQmkuXmDThJYol7JF6EGE08AXej8egJ8GD0on8CeDF6Ai/Gm0sswo36F1haku4FGCJJwXR3fKelpbUftMuu3f0lzX7NpM9O3n1n5nkZLoGmGVokZhsSuCshdQY5DjBNPTprIuiXoeeCgaUZsGEXIqYQpoBLGFygxZMGY1ikzuM14jqGXmCdg73fz39fR5d0JXg4MTUj4byjbjo8QWaYlMv71o/VTnt0JFiLT+qMRVeosQF/SDuyOCus7cxFDSMXNdASyWec8Y8k9hb8I84Yn48N3DwtHOe22zVsK/j6jaSK09d0ehX+Q//BpmODIyj8zm60atRSsBJLX8cS/j9GO9FNBfdQbIWWohsEq5g9C4NeY1BMH/0b03VZQmUDzqI7cJFbfUJQ9piozR689imlrjUER6xCU+m09kZV8HB8av5s5goUKverCatyXRUsmbOIgFKeXcuUBJffgOkILExX6xd1VhLsQM4h4KjFVumo6YbGT4uH8IDBwQEMDfXX3cvl8vAI4RSio9HIaWk96wmvXj7B40f3qtfZnIWJ2w/hERqu2AanhbcBj8hlLaS2dpDbs+AHPCINTmljDB7x5u0K7j94ig+fvsAP1K6GRjhQE0VbGPiYyhI6QoPUlODQjDChcYQMJdj1lrsHCBIsQyOYEkSGsgRLIyxIGmHKw7sICbSe+MnK5ohcQwhwbDbL7b6IibB8eH8iJhcZk4w6BD6OKQo+KxOxlIdtiWUEHGnzVXWs7pqvJe78IktURwCh0c0c5jdH1fn5ng78OQKKJIezcl7nSwwnkt+kfw6lW9IH+dRE5aJuLWHL4gKClTGUkTJbe6POqjo53hN9ZHlSLE8jEMgXh9bW19o7Dd7aCXlZsf4R0tzj0KDMdWBtNnh8Td3LwnHW7KnoktjUUrNHLf3hnoluI1bR1oFXoimmj0j1JPx34YWK2WZhUEs3RZk1v8xCKWFKFBc6Kcp0VfbSlMNJpqFXM6KawdSEJbqo17krLNKSlKqec9R5pvveEDSiaZqgloWVMtElrgRXUKVbUOmWk3vEJMYcRgZ02TY4L91KKSQrlW13HTATlyzd/gVNbityndhIJQAAAABJRU5ErkJggg==" alt="Button Number Image"
+                class="w-full h-full"></button>
+            <button type="button" class="w-14 h-14" aria-current="false" aria-label="Slide 2"
+              data-carousel-slide-to="1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO4SURBVHgB1ZnPb1RVFMe/53aczjSiLzExBiNMTUytidIujTGOK2tiDF1rIl3V4kL6F7SzceEGEyO1bsDEmBAXICt3jLolaWFBKSQwLYSwgPD49Uqn9B7OufDKDLSdX/cxj0/SzJ375qXfuXPuOe9+D6EDgsNzQXWlr0iGPrHgAhhDxAhA8qcwQhhUmCk0hHm2/G82H5XDseEQbUJog9zPC0XK9EwR89CGuBZgwnGy+D3aP3AcLdKS4L5Di3vlnx2UmwrwQ4VgS/cmBo80e0NTgnMzCwVCz2ECF5EEjHlLdvT+xGCl0UdNow/kfz3/vWEzl5hYhTBkYObyh84daPzRbeibvTAFa6fxXDHT0cQ7pa2ubim4O2Jjtha9qeDuio3ZXPQzgjVmJV39hBTAzJMr+9+t01InWLOBbrB2cmtChBZ2uDZ71GUJQ+ZYisQqgabT2okNwblfFvZpaUXK0HSqBSt+vyGYjJlCWpHqGg+dYP0GHsttEhT0+UUHj1bY4BukHH3Ycq/BwUtBNVe9CY98vLMPu3ZksHznAf6/GsETYTYX9WeqvdUiPPH+a704OvImdovYmKU7axg5cdmJ7xB59u4tGiI/DzW7dryEf758y4m9tWrx39UVN79b5n/79A34gMgUjSWzBx4IsgbLd9dkJdfw3p8X8bms6vjJa+6ahkjtqreLlc2XkTznpVCcubGKD/9aqpsLZaVjljoPCclutMeI7AIS4NVegx8/et2N/1i8DU8EJolSrGLjeNYQ+eHUdXgiaHjiaIejn+3EB5Ixlh9nCB/hEGPcUdwjs5IRdJMlIVYIjZyCvQlWsV8PvOLSWgJi9bBayZAYHDIooEO+KLzsxCoaw2e/ervu+siJKx1XPSY1ZJiX4AEVmTSS0k6Te9YkHMOLAK+Pmuxqtux74yVFNr9aNuFkf8iG5pFyGPy3mogu8JjXS0g5xPaIe40n8jOLl1J86qhEEwP9OnhypmNMIqWow/lkXIOYKCclzRWRJqRORN8ODMdv65KnxPJYqjKGaLFsR2un6gSrw8I9nJoNKJmh9LRn/Ex5WhlXL8t2X7S1pad9NWVru3VmYVq+T3fMFREbfTc4vdml7Q3tbojeRqzSsMeRnz13gNZpKnGTUDaYxuxmYVBL000Z52wmZBYyqMxYH2umKdNS20uE7yMJEZ9tL9n2k9F48/26thqLrl8nfpxUx70t36w/PdG8rKimrDJapC3BMRutW3GP1JBxHofaBjWtW3cEk2pl5KAgLdxyp63bh2B9e0uUz35KAAAAAElFTkSuQmCC" alt="Button Number Image"
+                class="w-full h-full"></button>
+            <button type="button" class="w-14 h-14" aria-current="false" aria-label="Slide 3"
+              data-carousel-slide-to="2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQgSURBVHgBzZlLaFNbFIb/ddLbtNe2N3AH11x64fRqRRBsRYtVEI/gI+qkBXHiqwqiduKjIyetxYkiYifaOlJBQUSpDtSAgnFkQdEiCIJVI1aqghqfMdGe7do7TdrYNDY5O+Z8cHqeaf5s1llr7X8THOCzdvnKy2MWbGMxIEwQ6iHg471PPSAQgUFhtRfoh2HfjEa9oUioK4I8IeTB1MB2i+DpgBD1KXG5IHARhjg1dLX7InIkJ8H+lTuaIOgIH5rQQ1gAnS+Dx05O9gOTEswjavKInuChsVAIOFwE2c0vgz3hXz3q+dUD/hWtOwl0ln/aTBQKwlQiaqmsnRf7NHCnL9ujWQX/G2jt4H92gLcyFB7+DgpUTW/Ax4HbNyd6aELBUizH1z78fqxsojMKLqLYJBOKHidYxqwKg+JjcUy//zmm07KEygbCuJdXbi0EhIgQ9pyx2cNIuy88va4RK+GqyRnqxNhLKcE8ui2suB6ugyxVsEZICSYYHXArieqqUIL9y9UvMOFeTNm/yIPECBNtgsvhWFYRQCa3iLGy+Ds4pGpKOf6a8mfGe+8/f8GHz1E4gjNGNFpaUxIr5X42vy4zja1NS9C2fnXGe4dPX8bhM1fgCM4Ypay1BB6y+MQxz1+/xa37j1LnVRXlmPV/deLeq7fQgYeIBQuqgwbF5671qU0iw+PCwV2J69f71KYH2zTUlEYzXW0bMGtaNR48foH2ngvQBhl1hpqLaaRz2xoEFtSp46qKMhXb2uAq7KmsbdDa6GxctQixb98Qj3/Hf//8jYWzazlDfMXdh0+hgTLyB1o1vHKZ6dqzAWuXNfJL9wbzW9qhA0NNwTWRzApJHjwZhFY4FxvyDxwis8LD84dw7ehetK1bnbqWjN9BTWkNNsIlyuAgZ32ErGLBW/exdmkjF49V2NpsseDRqtd+/Dx0IIginsoZDQv4uBEOkYJlsZg7swbe0j/UNVkwtuw/zi9cGDoggUukOjWDeqGRas4OkkF+2XQybIvmEm/cG4p54xGdMw3dQpPEWasRlsYciX64HWFfkiai6ocFRCdczrCgk3Kf6iu5gMhSZMKdhIeCx2rkweis2Ra74VKkw5k8Tuvc/YEdN+QsFW6CqH/o6tE5ydM0X4JjebPOUu0YIY2U4eaxl9KsKraFIpUz5sWkiwg3YIi97PoEx14a561JL6tiegNxrFgoIglnvntc65vRvfw0cDtUTNEjywj7Mt2b0B8uluhsYiVZHXgpWlqe3CY1FtyFV0tkMma7s86AJr8oI4xetQ5XAAQoxLVs82QWZXJyUKTDOWIamtBDmPuY3bms1+Vl+aiW1MN+nEBTzh+WuZWLAY8ox2pPCDniyKNSS7fS6mJHhkXUkfI41BKub1QcIvzm9vP05hmvnIaicWdLtz8Abyh8qjqCbasAAAAASUVORK5CYII=" alt="Button Number Image"
+                class="w-full h-full"></button>
+            <button type="button" class="w-14 h-14" aria-current="false" aria-label="Slide 4"
+              data-carousel-slide-to="3"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOLSURBVHgB1Zm/b9NQEMe/9+yGloAUCYmxBAY2KEiMNJiRAYlODCABEyN0hKXtgthgZQIkmAEJsTYkfwAFhBgYaLuBhHAFaUsS+7izk5DQH/n13Lofycmzn5N883zv3r07whDwfC4XOFWPDJ1j5jwxTjFRTrpyjVt8AhZZ3wkLHPJbJ8gU6bzvY0AIA1Arj3oEZ0aap9rE9QG/BOOpW1h9iT7pS3C9dPASmeABM+VhA8IiQsy5hcqT3j/SA2vzo/kR13ksTQ8JoOZSrQVTY+fXF7vda7rdEJTHbonYd0hIrMJi+/ob1dLY7W73bjvCQXn/DINmsYMQeNaZXJ3bun8LdkNsk+1Ebyp4N8U22Ur0BsFqswzzECkg5HA6U1jr0NIhuOENdIIN4FsTwa/Vg9Pt3qPDS2Rc5wXSI1bJNdxpi5bgeil7neOVK214umA1T1qCyfAM0ooJH7Sa+qL/wNpymwSMfK18wNNmPMIUXEPKETcXWQBFIaJb+wnL0OiRuFFfAdcHjibb8Z36yFE3cAIPllGx5synqM0rZfDHC7BAFHsb5tCDZcyJN0gCmWeeIYMJWITG7wL7jkSmYB3ivCGLCwUdugijgteXwd+fwTbG0ISRxSIPC0R2e+x+1A4+X5aJZn+EJW7OqVuzMsI0ficyBV6+B1Q+IiFyXXccvUCHr0aHwutL0r4Cyp6I++RPxOcnYQNXDnWSw43y6HiraY4/2tCn18Jo5D9gSHyXmP1GLmFwRAh/e95xiQ7IiOoo6wQUX2xBrMbCiy7LjhVDTjz+8To6Or5cvIURwfxnCeGXm7CBJmQMh7SEPQKHeE9RrEnhC+wFmKeMEzhFxBMv9WhezjQScwtIOZJsfKVaIz8sW/o5pBzxEE8a7zFBaf9XcW95pBEWd1aoHNWm+XfNmUZ6aVlAR16iXs7OI8Gk3yCIwAVnsnK6ed4RS0jS4gbS5DEYfrUeTLVf6hCsGZaQkZoJGBrM/Z8z3hCtZQqVh2nwGqohc7ayIce3ZbpV8gCzza31TqNiRyZ/z27Wt21CezdEbydW6VrjqJayt2Xjp6KTTRLKBFOb3cwM2um5KKOZzQSThUX1UL0UZfose2Wvq4lYWxFlBZN5P+0WfvVcrxuosBiHpJqPo0t9f1gePbQqGttqEX0ykODWb0el28BjCqUyignNcchWPC/fmmuKkyficyxwidgUNZwdpnT7F+yLYJe0UeHvAAAAAElFTkSuQmCC" alt="Button Number Image"
+                class="w-full h-full"></button>
+            <button type="button" class="w-14 h-14" aria-current="false" aria-label="Slide 5"
+              data-carousel-slide-to="4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQtSURBVHgBzZlbiFNHGMf/cxLabtnNHt2XpJgQoQulbrv6ZmsWz0th60tdSlt8KF6g0JdWimCpfVj3oUUFUcQHQfCCIKLCquDtRSOutycDriK4uDFZSF50J7uBuLDJ+M3k4ombjZtkjjk/CDNnzhzyP5Mv38z8h6EFTNMyPR15SwDrBUSYQawGmClvlbpw+sTpPmdgMQbcyuc8Uc6jHE3C0ASmP2IxhmF6eLVN3JKhF7hggJ18mbp9AQ3SkOCewMBGgcIBeiwMLYg4E2LkZfruiaU+sSTBpn9tmDHvcepswRliBTE/xNP34+/r6HlfBzMQ2W4w4wyJ/QLO4WfM2NLRFZzLZZP363WsK3j5ZxEZp3uo+gmch76DDXb4QsjNJm4t1mlRwVIs/Tt248Nj1RNdU3AbxZZZVPQCwTJmS2HQbiyK6cy7MV2VJWQ2MJj3IZrIrQ7BKXussWcPw36XUtco3CNWYsp0am+oCO7xD2wpzVyuQuZ+OWGVryuCBSsMw6UUZ9ciSnDxDVgYroWF5fpF1pTgAsRmuBy52FKlGbZMY25+GhoIBgM12zOZLGZmZtEivJDzrvR65tR6Vgunjv2Hr1b1Lmjfu/8Y9u0/jhYx8VHe8tLC24ImymLH7j2sak8m09CB4RGWl9JGv44R7iuJHX88gR9+/BNOIHc1NMJ6Joru7k5VZjKz2DA4oK4fjU/QCzyDLhiMfi+VYWigb9Xnqlz37Rr1KXPk6Dn8O3wIehCmTGtaRji0wq/KmZksTp+9isvXb6vr33/7CTt3bIUmTLY8ENGSJEJBP/q+7FUhkJgq/skOH9yFTT9/r+J6/Xd6RMuQkFvulkc5QZlAUJQlp9K2tpQqfb5OaIJTSIimPQI7l84fQuzBWfxd+vl9vi5s+mWDqiemUtABhULcoFGJQQOP6GeX7NyxDc+fXsXk0yuVuP5j+//QggD3fNoV+oaqa9EiN6IPIBPP13296C6FgJwwft22C+NPJqADWk9cZEVzRIxCI8EVxTVFUlMolCnk2VB58TMJd+00akKLn2UGj0fJqIOWOHYSioKL0kRU6+G8wAhcjsgbJ2RZ2TUvC6ybJEs0DBdCoxufTt1ZKetv93Qw/oJLEeRwlutVvkRPIHJTOOdQNkvsVWqsspqq8iXyYl5OU1pmPk1II2XI3lBlVb3OTvGPyfKkWB6EKxD/TKfvXbO3LPDWXpOX1dEZIs1tDg3KXK/SdxZ4fDXdy1w2EW2raCV2bHetW4v6w20TXUespK4DL0VTTGdItVwcOe3CcxmztcLATiOHMqNOmYVCICowv3UphzINHXuZ0uEk01DXjChnMDlh8QbO65o7WKQlKZ16bqaHNzb+NDiNaIwmqBGeHouiQZoSXEYe3YKObg1yj5hAf4HRrrZoG7w9uhWCC6aObV8UwKJo8ej2DSuze7Gl0EGtAAAAAElFTkSuQmCC" alt="Button Number Image"
+                class="w-full h-full"></button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- * WHY UCHOP END -->
+
+    <!-- *STORY START -->
+    <section class="my-9 mx-[10px] md:mx-4 md:mt-5 md:px-0 lg:px-0 rounded-[19px]">
+      <div class="max-w-screen-xl mx-auto px-5 md:px-8 relative">
+
+        <div
+          class="flex flex-col gap-11 padding-t-b p-[26px] bg-secondaryclr bg-storyBgimg bg-top bg-no-repeat bg-cover text-white text-center rounded-[19px] lg:px-[200px] lg:py-[100px] lg:rounded-[71px] 1.5xl:px-[246px]">
+          <!-- *Contents -->
+          <div>
+            <h2 class="font-extrabold text-[30px] leading-[35px]">
+              <span class="block md:inline-block">☘️</span>
+              Every Story Plants a Tree
+              <span class="hidden md:inline-block">☘️</span>
+            </h2>
+            <p class="mt-[21px] px-5 font-medium text-[12px] leading-[17px] text-white">Make a difference with your
+              content. For every highlight we create, we plant a tree through Seedballs Kenya.</p>
+          </div>
+
+          <!-- *Images -->
+          <div class="w-full">
+            <img src="./assets/story-img-1nxMoXpT.png" alt="Video image" class="w-full">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- *STORY END -->
+
+    <!-- *CLIENTS START -->
+    <section class="relative my-9 px-[10px] w-full rounded-[19px] sm:px-0 md:mt-5 lg:my-[80px]">
+
+      <!-- ?Title -->
+      <div class="flex justify-between items-center md:px-[100px] xl:mx-auto xl:w-[85%]">
+        <!-- Title -->
+        <div>
+          <h2
+            class="px-20 font-jakarta font-extrabold text-[clamp(30px,_5vw,_75px)] leading-8 tracking-[-0.25px] text-center text-primaryclr md:px-0 md:py-6 md:text-left md:w-[30%] md:leading-[40px] lg:py-0 lg:leading-[50px]  xl:pr-[530px] xl:w-[80%] xl:leading-[65px] 1.5xl:leading-[65px]">
+            Client’s <span
+              class="font-semibold italic tracking-[-1.2px] bg-gradient-to-r from-[#00689D] via-[#26BDE2] to-[#19486A] bg-clip-text text-transparent">feedbacks</span>
+          </h2>
+        </div>
+
+        <!-- Next - Prev button  -->
+        <div class="hidden md:block swiper-controls-desktop">
+          <div class="flex gap-4">
+            <div
+              class="swiper-button-prev p-[25px] w-[50px] h-[50px] rounded-full bg-white flex justify-center items-center">
+              <p class="font-extrabold text-[20px] text-orangeclr">&#10229;</p>
+            </div>
+
+            <div
+              class="swiper-button-next p-[25px] w-[50px] h-[50px] rounded-full bg-white flex justify-center items-center">
+              <p class="font-extrabold text-[20px] text-lightBlueclr">&#10230;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ?Slider -->
+      <div class="swiper centered-slide-carousel swiper-container relative">
+
+        <div class="swiper-wrapper">
+
+          <!-- *Slider 1 -->
+          <div class="swiper-slide">
+            <!-- ?Testimonial -->
+            <div class="my-3 bg-white rounded-[18px] lg:my-[50px]">
+              <!-- *Testimonial Wrapper -->
+              <div class="flex flex-col gap-5 px-4 py-3 md:flex-row md:items-center xl:gap-10">
+                <!-- ?Column-1 (Title and Text) -->
+                <div class="px-2 md:w-[40%] lg:w-[30%] xl:pl-[69px] xl:w-[50%] 1.5xl:w-[40%]">
+                  <h2
+                    class="pb-2 font-medium text-[19px] leading-5 text-left w-36 bg-gradient-to-r from-[#363A50] to-[#00689D] bg-clip-text text-transparent md:text-[35px] md:leading-8 xl:text-[44px] xl:leading-10 xl:w-56">
+                    Speakers & Delegates</h2>
+                  <h3
+                    class="pb-2 font-medium text-[19px] leading-5 text-left md:text-[35px] md:leading-8 xl:my-[25px] xl:text-[30px] xl:leading-8">
+                    Elevate Your Influence Instantly</h3>
+                  <p
+                    class="my-[15px] pr-2 font-medium text-xs leading-[14px] text-left md:my-[22px] lg:text-base lg:leading-[27px]">
+                    Transform live moments into powerful narratives that position you as a thought leader.</p>
+                  <a href="#"
+                    class="inline-block py-[16.5px] px-[30px] font-semibold text-[15px] tracking-[-0.25px] rounded-[50px] bg-secondaryclr text-white  xl:mt-[20px] 1.5xl:py-5">Get
+                    boost your event impact</a>
+                </div>
+
+                <!-- ?Column-2 (Testimonial) -->
+                <div
+                  class="flex items-end w-full bg-clientBgimg1 bg-no-repeat bg-cover h-[270px] rounded-[18px] sm:h-[370px] md:w-[60%] lg:w-[70%] lg:h-[520px] xl:w-[50%] 1.5xl:w-[60%]">
+                  <!-- *Testimonial -->
+                  <div
+                    class="flex flex-col gap-[15px] px-2 pt-3 h-[60%] sm:h-[40%] lg:px-7 lg:h-[50%] xl:h-[50%] 1.5 xl:h-[45%]">
+                    <!-- Text -->
+                    <div>
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAA6CAYAAAAnft6RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANmSURBVHgB7ZqNcdNAEIWfGQowFaAOCB04HSQVoBJCBTYVECowHdhUIFMBpgKJCmIqeNz6rCA8Ntbt3a2UTL4ZTTSeifTm7c+tTpogEJIr9+cG+dlNJpM3CMTpm7o/D7Dh9hXCmcKGLXRcwY5GY6CVwN/QYRVgIczAQ3m8ZKBHWswuNAMty0Nr4DvYsNcXaqBleeygw0rjvsU8xwy00qjKwAI27PsLAhmiR4ca+BY2NNBhWSH7AI81A39Bh2WPHnUJP4kRRk56G+j6i3l5KDAdYYSQDDQvDwWmI4wQYqBlBtbQYTrCCCEGFjDC9ZfgRcR4hGnakxADzftLIKa7MO3JGHvg2B/hBFUJW0X4J3SYZWD3KamXga6/FLCjgY5BWkzfDCxgx9hHmH8WuOdkoPkII4zNwO1T2YVp6WugVX/RbiIMtk/Z10Cr6G6gw2yAdhXSdH/oa6BVhDfQMdiIddFAw/4i0R37i6T18Q99MnDs2ScM1mL6GGgl7hv0WAR5e9z/suBKfslwrL5l2T9VUcfdqetpPu24xAzhrGFHCR35NbooldQxgxHuXjXDqWCBUpx291mjTxvgErkZtbi/GmuGkz/A9I25ZjiW2TenjjvkhrqVVyhhAPUrb83ce6HUR9Yk+9x9ptRVh7BATtwNPlBPCQPcfVbUkTfAkeaZjAXUtxahRC4izRMKZIS+bJfUs0QuqO95LQtkhH7B+EE9NXME+CCsYhwrZMRd/8YdD4yjREroy2GeQFjNTKXrrjtjfHCFBVLBdMbxcI0CiWE644T4hY3etPIgKoVxLTdIBL1p88T6avqd9yhhn5mHJI9C9MalNK2lZkR1dPcDc+zqfnK7uPdIQ4H0u+ONO65jdppfd85TG/gxoXlCgbQ0iDRP2BvItG/e5MuCWydsg7SkfPO2gdeo/ZTukbaEC6Shccf7DOYJqQL8xem7TmHeI/QDaCxfGbuS/V9j7AIi/18iB+7CC+oRYcnGlDP6poyjYs7nb/rs0XDPjFnX0TejjpqZg9sKrBhGRds3aaEtRqpCqsrmowD237GtLI3r6OvbYmyN6wjsI6rAQPByi6loUapnxF2dMW05RLadgqdbTDVIth0hg7QIkJlIPi377o5NpjkuBnlKauAHYNG4TjrHxUA/IgwaxUuMWd8fge3QHMF9UbQAAAAASUVORK5CYII=" alt="Testimonial quote image" width="30" height="41"
+                        class="ml-2 mb-2">
+                      <p
+                        class="text-[9px] text-white leading-[10px] sm:pr-[200px] md:pr-[100px] lg:text-base lg:leading-[23px] xl:pr-0">
+                        "Uchop has changed how we handle, create and distribute
+                        our virtual event content highlights. The speed and quality their team brings to the table is
+                        unparalleled. Their instant content delivery is not a myth—it's reality."</p>
+                    </div>
+                    <!-- Name -->
+                    <div class="text-right">
+                      <h2 class="font-extrabold text-xs text-white leadding-[10px] lg:text-xl lg:leading-xl">Sophia
+                        Landhle</h2>
+                      <p
+                        class="pl-[70px] font-semibold text-[9px] text-white leadding-[10px] lg:text-[14px] lg:leading-xl xl:pl-[100px]">
+                        Event Coordinator, The Sustainability Global Summit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *Slider 2 -->
+          <div class="swiper-slide">
+            <!-- ?Testimonial -->
+            <div class="my-3 bg-white rounded-[18px] lg:my-[50px]">
+              <!-- *Testimonial Wrapper -->
+              <div class="flex flex-col gap-5 px-4 py-3 md:flex-row md:items-center xl:gap-10">
+                <!-- ?Column-1 (Title and Text) -->
+                <div class="px-2 md:w-[40%] lg:w-[30%] xl:pl-[69px] xl:w-[50%] 1.5xl:w-[40%]">
+                  <h2
+                    class="pb-2 font-medium text-[19px] leading-5 text-left w-36 bg-gradient-to-r from-[#363A50] to-[#FD9D24] bg-clip-text text-transparent md:text-[35px] md:leading-8 xl:pb-5 xl:text-[45px] xl:leading-10 xl:w-56">
+                    Event Organisers</h2>
+                  <h3
+                    class="pb-2 font-medium text-[19px] leading-5 text-left md:text-[35px] md:leading-8 xl:my-[25px] xl:text-[30px] xl:leading-8">
+                    Seamless Execution, Lasting Impact
+                  </h3>
+                  <p
+                    class="my-[15px] pr-2 font-medium text-xs leading-[14px] text-left md:my-[22px] lg:text-base lg:leading-[27px]">
+                    Save time, enhance quality. Focus on
+                    the magic of the moment while we handle the storytelling—quickly and flawlessly.</p>
+                  <a href="#"
+                    class="inline-block py-[16.5px] px-[30px] font-semibold text-[15px] tracking-[-0.25px] rounded-[50px] bg-secondaryclr text-white 1.5xl:py-5">Get
+                    Started Now</a>
+                </div>
+
+                <!-- ?Column-2 (Testimonial) -->
+                <div
+                  class="flex items-end w-full bg-clientBgimg2 bg-no-repeat bg-cover h-[270px] rounded-[18px] sm:h-[370px] md:w-[60%] lg:w-[70%] lg:h-[520px] xl:w-[50%] 1.5xl:w-[60%]">
+                  <!-- *Testimonial -->
+                  <div
+                    class="flex flex-col gap-[15px] px-2 pt-3 h-[60%] sm:h-[40%] lg:px-7 lg:h-[50%] xl:h-[50%] 1.5xl:h-[45%]">
+                    <!-- Text -->
+                    <div>
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAA6CAYAAAAnft6RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANmSURBVHgB7ZqNcdNAEIWfGQowFaAOCB04HSQVoBJCBTYVECowHdhUIFMBpgKJCmIqeNz6rCA8Ntbt3a2UTL4ZTTSeifTm7c+tTpogEJIr9+cG+dlNJpM3CMTpm7o/D7Dh9hXCmcKGLXRcwY5GY6CVwN/QYRVgIczAQ3m8ZKBHWswuNAMty0Nr4DvYsNcXaqBleeygw0rjvsU8xwy00qjKwAI27PsLAhmiR4ca+BY2NNBhWSH7AI81A39Bh2WPHnUJP4kRRk56G+j6i3l5KDAdYYSQDDQvDwWmI4wQYqBlBtbQYTrCCCEGFjDC9ZfgRcR4hGnakxADzftLIKa7MO3JGHvg2B/hBFUJW0X4J3SYZWD3KamXga6/FLCjgY5BWkzfDCxgx9hHmH8WuOdkoPkII4zNwO1T2YVp6WugVX/RbiIMtk/Z10Cr6G6gw2yAdhXSdH/oa6BVhDfQMdiIddFAw/4i0R37i6T18Q99MnDs2ScM1mL6GGgl7hv0WAR5e9z/suBKfslwrL5l2T9VUcfdqetpPu24xAzhrGFHCR35NbooldQxgxHuXjXDqWCBUpx291mjTxvgErkZtbi/GmuGkz/A9I25ZjiW2TenjjvkhrqVVyhhAPUrb83ce6HUR9Yk+9x9ptRVh7BATtwNPlBPCQPcfVbUkTfAkeaZjAXUtxahRC4izRMKZIS+bJfUs0QuqO95LQtkhH7B+EE9NXME+CCsYhwrZMRd/8YdD4yjREroy2GeQFjNTKXrrjtjfHCFBVLBdMbxcI0CiWE644T4hY3etPIgKoVxLTdIBL1p88T6avqd9yhhn5mHJI9C9MalNK2lZkR1dPcDc+zqfnK7uPdIQ4H0u+ONO65jdppfd85TG/gxoXlCgbQ0iDRP2BvItG/e5MuCWydsg7SkfPO2gdeo/ZTukbaEC6Shccf7DOYJqQL8xem7TmHeI/QDaCxfGbuS/V9j7AIi/18iB+7CC+oRYcnGlDP6poyjYs7nb/rs0XDPjFnX0TejjpqZg9sKrBhGRds3aaEtRqpCqsrmowD237GtLI3r6OvbYmyN6wjsI6rAQPByi6loUapnxF2dMW05RLadgqdbTDVIth0hg7QIkJlIPi377o5NpjkuBnlKauAHYNG4TjrHxUA/IgwaxUuMWd8fge3QHMF9UbQAAAAASUVORK5CYII=" alt="Testimonial quote image" width="30" height="41"
+                        class="ml-2 mb-2">
+                      <p
+                        class="text-[9px] text-white leading-[10px] sm:pr-[200px] md:pr-[100px] lg:text-base lg:leading-[23px] xl:pr-0">
+                        "Uchop has changed how we handle, create and distribute
+                        our virtual event content highlights. The speed and quality their team brings to the table is
+                        unparalleled. Their instant content delivery is not a myth—it's reality."</p>
+                    </div>
+                    <!-- Name -->
+                    <div class="text-right">
+                      <h2 class="font-extrabold text-xs text-white leadding-[10px] lg:text-xl lg:leading-xl">Dan
+                        Thomas
+                      </h2>
+                      <p
+                        class="pl-[70px] font-semibold text-[9px] text-white leadding-[10px] lg:text-[14px] lg:leading-xl xl:pl-[100px]">
+                        Chief of Communications & Strategic Events, UN Global Compact</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *Slider 3 -->
+          <div class="swiper-slide">
+            <!-- ?Testimonial -->
+            <div class="my-3 bg-white rounded-[18px] lg:my-[50px]">
+              <!-- *Testimonial Wrapper -->
+              <div class="flex flex-col gap-5 px-4 py-3 md:flex-row md:items-center xl:gap-10">
+                <!-- ?Column-1 (Title and Text) -->
+                <div class="px-2 md:w-[40%] lg:w-[30%] xl:pl-[69px] xl:w-[50%] 1.5xl:w-[40%]">
+                  <h2
+                    class="pb-2 font-medium text-[19px] leading-5 text-left w-36 bg-gradient-to-r from-[#363A50] to-[#A21942] bg-clip-text text-transparent md:text-[35px] md:leading-8 xl:text-[44px] xl:leading-10 xl:w-56">
+                    Partners & Sponsors</h2>
+                  <h2
+                    class="pb-2 font-medium text-[19px] leading-5 text-left md:text-[35px] md:leading-8 xl:my-[25px] xl:text-[30px] xl:leading-8">
+                    Maximise Your ROI Creatively</h2>
+                  <p
+                    class="my-[15px] pr-2 font-medium text-xs leading-[14px] text-left md:my-[22px] lg:text-base lg:leading-[27px]">
+                    Transform live moments into powerful narratives that position you as a thought leader.</p>
+                  <a href="#"
+                    class="inline-block py-[16.5px] px-[30px] font-semibold text-[15px] tracking-[-0.25px] rounded-[50px] bg-secondaryclr text-white  xl:mt-[20px] 1.5xl:py-5">Get
+                    boost your event impact</a>
+                </div>
+
+                <!-- ?Column-2 (Testimonial) -->
+                <div
+                  class="flex items-end w-full bg-clientBgimg3 bg-no-repeat bg-cover h-[270px] rounded-[18px] sm:h-[370px] md:w-[60%] lg:w-[70%] lg:h-[520px] xl:w-[50%] 1.5xl:w-[60%]">
+                  <!-- *Testimonial -->
+                  <div
+                    class="flex flex-col gap-[15px] px-2 pt-3 h-[60%] sm:h-[40%] lg:px-7 lg:h-[50%] xl:h-[50%] 1.5xl:h-[45%]">
+                    <!-- Text -->
+                    <div>
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAA6CAYAAAAnft6RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANmSURBVHgB7ZqNcdNAEIWfGQowFaAOCB04HSQVoBJCBTYVECowHdhUIFMBpgKJCmIqeNz6rCA8Ntbt3a2UTL4ZTTSeifTm7c+tTpogEJIr9+cG+dlNJpM3CMTpm7o/D7Dh9hXCmcKGLXRcwY5GY6CVwN/QYRVgIczAQ3m8ZKBHWswuNAMty0Nr4DvYsNcXaqBleeygw0rjvsU8xwy00qjKwAI27PsLAhmiR4ca+BY2NNBhWSH7AI81A39Bh2WPHnUJP4kRRk56G+j6i3l5KDAdYYSQDDQvDwWmI4wQYqBlBtbQYTrCCCEGFjDC9ZfgRcR4hGnakxADzftLIKa7MO3JGHvg2B/hBFUJW0X4J3SYZWD3KamXga6/FLCjgY5BWkzfDCxgx9hHmH8WuOdkoPkII4zNwO1T2YVp6WugVX/RbiIMtk/Z10Cr6G6gw2yAdhXSdH/oa6BVhDfQMdiIddFAw/4i0R37i6T18Q99MnDs2ScM1mL6GGgl7hv0WAR5e9z/suBKfslwrL5l2T9VUcfdqetpPu24xAzhrGFHCR35NbooldQxgxHuXjXDqWCBUpx291mjTxvgErkZtbi/GmuGkz/A9I25ZjiW2TenjjvkhrqVVyhhAPUrb83ce6HUR9Yk+9x9ptRVh7BATtwNPlBPCQPcfVbUkTfAkeaZjAXUtxahRC4izRMKZIS+bJfUs0QuqO95LQtkhH7B+EE9NXME+CCsYhwrZMRd/8YdD4yjREroy2GeQFjNTKXrrjtjfHCFBVLBdMbxcI0CiWE644T4hY3etPIgKoVxLTdIBL1p88T6avqd9yhhn5mHJI9C9MalNK2lZkR1dPcDc+zqfnK7uPdIQ4H0u+ONO65jdppfd85TG/gxoXlCgbQ0iDRP2BvItG/e5MuCWydsg7SkfPO2gdeo/ZTukbaEC6Shccf7DOYJqQL8xem7TmHeI/QDaCxfGbuS/V9j7AIi/18iB+7CC+oRYcnGlDP6poyjYs7nb/rs0XDPjFnX0TejjpqZg9sKrBhGRds3aaEtRqpCqsrmowD237GtLI3r6OvbYmyN6wjsI6rAQPByi6loUapnxF2dMW05RLadgqdbTDVIth0hg7QIkJlIPi377o5NpjkuBnlKauAHYNG4TjrHxUA/IgwaxUuMWd8fge3QHMF9UbQAAAAASUVORK5CYII=" alt="Testimonial quote image" width="30" height="41"
+                        class="ml-2 mb-2">
+                      <p
+                        class="text-[9px] text-white leading-[10px] sm:pr-[200px] md:pr-[100px] lg:text-base lg:leading-[23px] xl:pr-0">
+                        "Uchop instantly crafts vibrant, branded web stories from our live events. Their real-time AI
+                        content insights and visual audience engagement data have greatly helped us drive deeper
+                        connections right in their inboxes - an absolute game-changer."</p>
+                    </div>
+                    <!-- Name -->
+                    <div class="text-right">
+                      <h2 class="font-extrabold text-xs text-white leadding-[10px] lg:text-xl lg:leading-xl">Josiane
+                        Uwantege</h2>
+                      <p
+                        class="pl-[70px] font-semibold text-[9px] text-white leadding-[10px] lg:text-[14px] lg:leading-xl xl:pl-[100px]">
+                        Josiane Uwantege
+                        Founder & CEO, DuniaMedia Sàrl</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *Slider 4 -->
+          <div class="swiper-slide">
+            <!-- ?Testimonial -->
+            <div class="my-3 bg-white rounded-[18px] lg:my-[50px]">
+              <!-- *Testimonial Wrapper -->
+              <div class="flex flex-col gap-5 px-4 py-3 md:flex-row md:items-center xl:gap-10">
+                <!-- ?Column-1 (Title and Text) -->
+                <div class="px-2 md:w-[40%] lg:w-[30%] xl:pl-[69px] xl:w-[50%] 1.5xl:w-[40%]">
+                  <h2
+                    class="pb-2 font-medium text-[19px] leading-5 text-left w-36 bg-gradient-to-r from-[#363A50] to-[#00689D] bg-clip-text text-transparent md:text-[35px] md:leading-8 xl:text-[44px] xl:leading-10 xl:w-56">
+                    Speakers & Delegates</h2>
+                  <h2
+                    class="pb-2 font-medium text-[19px] leading-5 text-left md:text-[35px] md:leading-8 xl:my-[25px] xl:text-[30px] xl:leading-8">
+                    Elevate Your Influence Instantly</h2>
+                  <p
+                    class="my-[15px] pr-2 font-medium text-xs leading-[14px] text-left md:my-[22px] lg:text-base lg:leading-[27px]">
+                    Transform live moments into powerful narratives that position you as a thought leader.</p>
+                  <a href="#"
+                    class="inline-block py-[16.5px] px-[30px] font-semibold text-[15px] tracking-[-0.25px] rounded-[50px] bg-secondaryclr text-white  xl:mt-[20px] 1.5xl:py-5">Get
+                    boost your event impact</a>
+                </div>
+
+                <!-- ?Column-2 (Testimonial) -->
+                <div
+                  class="flex items-end w-full bg-clientBgimg1 bg-no-repeat bg-cover h-[270px] rounded-[18px] sm:h-[370px] md:w-[60%] lg:w-[70%] lg:h-[520px] xl:w-[50%] 1.5xl:w-[60%]">
+                  <!-- *Testimonial -->
+                  <div
+                    class="flex flex-col gap-[15px] px-2 pt-3 h-[60%] sm:h-[40%] lg:px-7 lg:h-[50%] xl:h-[50%] 1.5 xl:h-[45%]">
+                    <!-- Text -->
+                    <div>
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAA6CAYAAAAnft6RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANmSURBVHgB7ZqNcdNAEIWfGQowFaAOCB04HSQVoBJCBTYVECowHdhUIFMBpgKJCmIqeNz6rCA8Ntbt3a2UTL4ZTTSeifTm7c+tTpogEJIr9+cG+dlNJpM3CMTpm7o/D7Dh9hXCmcKGLXRcwY5GY6CVwN/QYRVgIczAQ3m8ZKBHWswuNAMty0Nr4DvYsNcXaqBleeygw0rjvsU8xwy00qjKwAI27PsLAhmiR4ca+BY2NNBhWSH7AI81A39Bh2WPHnUJP4kRRk56G+j6i3l5KDAdYYSQDDQvDwWmI4wQYqBlBtbQYTrCCCEGFjDC9ZfgRcR4hGnakxADzftLIKa7MO3JGHvg2B/hBFUJW0X4J3SYZWD3KamXga6/FLCjgY5BWkzfDCxgx9hHmH8WuOdkoPkII4zNwO1T2YVp6WugVX/RbiIMtk/Z10Cr6G6gw2yAdhXSdH/oa6BVhDfQMdiIddFAw/4i0R37i6T18Q99MnDs2ScM1mL6GGgl7hv0WAR5e9z/suBKfslwrL5l2T9VUcfdqetpPu24xAzhrGFHCR35NbooldQxgxHuXjXDqWCBUpx291mjTxvgErkZtbi/GmuGkz/A9I25ZjiW2TenjjvkhrqVVyhhAPUrb83ce6HUR9Yk+9x9ptRVh7BATtwNPlBPCQPcfVbUkTfAkeaZjAXUtxahRC4izRMKZIS+bJfUs0QuqO95LQtkhH7B+EE9NXME+CCsYhwrZMRd/8YdD4yjREroy2GeQFjNTKXrrjtjfHCFBVLBdMbxcI0CiWE644T4hY3etPIgKoVxLTdIBL1p88T6avqd9yhhn5mHJI9C9MalNK2lZkR1dPcDc+zqfnK7uPdIQ4H0u+ONO65jdppfd85TG/gxoXlCgbQ0iDRP2BvItG/e5MuCWydsg7SkfPO2gdeo/ZTukbaEC6Shccf7DOYJqQL8xem7TmHeI/QDaCxfGbuS/V9j7AIi/18iB+7CC+oRYcnGlDP6poyjYs7nb/rs0XDPjFnX0TejjpqZg9sKrBhGRds3aaEtRqpCqsrmowD237GtLI3r6OvbYmyN6wjsI6rAQPByi6loUapnxF2dMW05RLadgqdbTDVIth0hg7QIkJlIPi377o5NpjkuBnlKauAHYNG4TjrHxUA/IgwaxUuMWd8fge3QHMF9UbQAAAAASUVORK5CYII=" alt="Testimonial quote image" width="30" height="41"
+                        class="ml-2 mb-2">
+                      <p
+                        class="text-[9px] text-white leading-[10px] sm:pr-[200px] md:pr-[100px] lg:text-base lg:leading-[23px] xl:pr-0">
+                        "Uchop has changed how we handle, create and distribute
+                        our virtual event content highlights. The speed and quality their team brings to the table is
+                        unparalleled. Their instant content delivery is not a myth—it's reality."</p>
+                    </div>
+                    <!-- Name -->
+                    <div class="text-right">
+                      <h2 class="font-extrabold text-xs text-white leadding-[10px] lg:text-xl lg:leading-xl">Sophia
+                        Landhle</h2>
+                      <p
+                        class="pl-[70px] font-semibold text-[9px] text-white leadding-[10px] lg:text-[14px] lg:leading-xl xl:pl-[100px]">
+                        Event Coordinator, The Sustainability Global Summit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls container -->
+        <div class="swiper-controls flex items-center justify-between mt-[-50px] w-[75%] mx-auto md:justify-center">
+          <div class="swiper-pagination flex items-center md:py-2"></div>
+          <div class="flex gap-4 md:hidden">
+            <div
+              class="swiper-button-prev p-[25px] w-[50px] h-[50px] rounded-full bg-white flex justify-center items-center">
+              <p class="font-extrabold text-[20px] text-orangeclr">&#10229;</p>
+            </div>
+
+            <div
+              class="swiper-button-next p-[25px] w-[50px] h-[50px] rounded-full bg-white flex justify-center items-center">
+              <p class="font-extrabold text-[20px] text-lightBlueclr">&#10230;</p>
+            </div>
+            <!-- <div class=""></div> -->
+            <!-- <div class="swiper-button-next"></div> -->
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+    <!-- *CLIENTS END -->
+
+    <!-- *FAQ START -->
+    <section class="mx-[10px]">
+      <div
+        class="mx-auto md:mt-5 lg:my-[80px] w-full rounded-[19px] bg-[#12193C] bg-faqBg bg-cover bg-right-top bg-no-repeat lg:bg-center">
+        <div class="max-w-screen-xl mx-auto px-5 md:px-8 relative">
+
+          <!-- ?Faq Wrapper -->
+          <div class="my-9 pt-10 pb-12 px-[10px] mx-[10px] rounded-[20px] md:bg-top">
+            <!-- ?Title -->
+            <div>
+              <h2
+                class="pb-9 px-20 font-jakarta font-extrabold text-[clamp(30px,_5vw,_75px)] leading-8 tracking-[-0.25px] text-center text-white md:px-0 md:py-6 md:leading-[40px] lg:py-0 1.5xl:leading-[65px]">
+                FAQ</h2>
+            </div>
+
+            <!-- ?Accordion -->
+            <div class='accordion-group md:my-8 xl:my-12' data-accordion="default-accordion">
+              <!-- ?Accordion Wrapper -->
+              <div class="flex flex-col gap-2 md:gap-4 1.5xl:gap-7">
+                <!-- *Accordion 1 -->
+                <div
+                  class='accordion bg-white/30 p-[clamp(16px,3vw,50px)] shadow-lg backdrop-blur-[9.6px] backdrop-filter rounded-xl transition duration-500'
+                  id='basic-heading-one-with-icon'>
+                  <button
+                    class='accordion-toggle group inline-flex items-center justify-between text-left text-base leading-4 text-gray-900 w-full transition duration-500 accordion-active:text-white'
+                    aria-controls='basic-collapse-one-with-icon'>
+                    <h5 class="font-normal text-white w-[80%] xl:text-3xl 1.5xl:text-4xl">What is Uchop?</h5>
+                    <svg
+                      class='w-6 h-6 text-gray-900 transition duration-500 block accordion-active:text-indigo-600 accordion-active:hidden group-hover origin-center'
+                      viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                      <path d='M6 12H18M12 18V6' stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                        stroke-linejoin='round'></path>
+                    </svg>
+                    <svg
+                      class='w-6 h-6 text-gray-900 transition duration-500 hidden accordion-active:text-indigo-600 accordion-active:block group-hover'
+                      viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                      <path d='M6 12H18' stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                        stroke-linejoin='round'></path>
+                    </svg>
+                  </button>
+                  <div id='basic-collapse-one-with-icon' class='accordion-content w-full  overflow-hidden pr-4'
+                    aria-labelledby='basic-heading-one'>
+                    <p class='mt-3 text-base text-primaryclr leading-4'>Uchop is a cutting-edge B2B content engine that
+                      brings your live events to life by instantly transforming them into dynamic, shareable stories,
+                      thanks
+                      to our blend of technology and expert content creators.</p>
+                  </div>
+                </div>
+
+                <!-- *Accordion 2 -->
+                <div
+                  class='accordion bg-white/30 p-[clamp(16px,3vw,50px)] shadow-lg backdrop-blur-[9.6px] backdrop-filter rounded-xl transition duration-500'
+                  id='basic-heading-one-with-icon'>
+                  <button
+                    class='accordion-toggle group inline-flex items-center justify-between text-left text-base leading-4 text-gray-900 w-full transition duration-500 accordion-active:text-white'
+                    aria-controls='basic-collapse-one-with-icon'>
+                    <h5 class="font-normal text-white w-[80%] xl:text-3xl 1.5xl:text-4xl">How does Uchop connect to my
+                      live
+                      event?</h5>
+                    <svg
+                      class='w-6 h-6 text-gray-900 transition duration-500 block accordion-active:text-indigo-600 accordion-active:hidden group-hover origin-center'
+                      viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                      <path d='M6 12H18M12 18V6' stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                        stroke-linejoin='round'></path>
+                    </svg>
+                    <svg
+                      class='w-6 h-6 text-gray-900 transition duration-500 hidden accordion-active:text-indigo-600 accordion-active:block group-hover'
+                      viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                      <path d='M6 12H18' stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                        stroke-linejoin='round'></path>
+                    </svg>
+                  </button>
+                  <div id='basic-collapse-one-with-icon' class='accordion-content w-full  overflow-hidden pr-4'
+                    aria-labelledby='basic-heading-one'>
+                    <p class='mt-3 text-base text-primaryclr leading-4'>Uchop is a cutting-edge B2B content engine that
+                      brings your live events to life by instantly transforming them into dynamic, shareable stories,
+                      thanks
+                      to our blend of technology and expert content creators.</p>
+                  </div>
+                </div>
+
+                <!-- *Accordion 3 -->
+                <div
+                  class='accordion bg-white/30 p-[clamp(16px,3vw,50px)] shadow-lg backdrop-blur-[9.6px] backdrop-filter rounded-xl transition duration-500'
+                  id='basic-heading-one-with-icon'>
+                  <button
+                    class='accordion-toggle group inline-flex items-center justify-between text-left text-base leading-4 text-gray-900 w-full transition duration-500 accordion-active:text-white'
+                    aria-controls='basic-collapse-one-with-icon'>
+                    <h5 class="font-normal text-white w-[80%] xl:text-3xl 1.5xl:text-4xl">How easy is it to integrate my
+                      speaker highlights page into my website?</h5>
+                    <svg
+                      class='w-6 h-6 text-gray-900 transition duration-500 block accordion-active:text-indigo-600 accordion-active:hidden group-hover origin-center'
+                      viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                      <path d='M6 12H18M12 18V6' stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                        stroke-linejoin='round'></path>
+                    </svg>
+                    <svg
+                      class='w-6 h-6 text-gray-900 transition duration-500 hidden accordion-active:text-indigo-600 accordion-active:block group-hover'
+                      viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                      <path d='M6 12H18' stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                        stroke-linejoin='round'></path>
+                    </svg>
+                  </button>
+                  <div id='basic-collapse-one-with-icon' class='accordion-content w-full  overflow-hidden pr-4'
+                    aria-labelledby='basic-heading-one'>
+                    <p class='mt-3 text-base text-primaryclr leading-4'>Uchop is a cutting-edge B2B content engine that
+                      brings your live events to life by instantly transforming them into dynamic, shareable stories,
+                      thanks
+                      to our blend of technology and expert content creators.</p>
+                  </div>
+                </div>
+
+                <!-- *Accordion 4 -->
+                <div
+                  class='accordion bg-white/30 p-[clamp(16px,3vw,50px)] shadow-lg backdrop-blur-[9.6px] backdrop-filter rounded-xl transition duration-500'
+                  id='basic-heading-one-with-icon'>
+                  <button
+                    class='accordion-toggle group inline-flex items-center justify-between text-left text-base leading-4 text-gray-900 w-full transition duration-500 accordion-active:text-white'
+                    aria-controls='basic-collapse-one-with-icon'>
+                    <h5 class="font-normal text-white w-[80%] xl:text-3xl 1.5xl:text-4xl">How does Uchop create speaker
+                      highlights?</h5>
+                    <svg
+                      class='w-6 h-6 text-gray-900 transition duration-500 block accordion-active:text-indigo-600 accordion-active:hidden group-hover origin-center'
+                      viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                      <path d='M6 12H18M12 18V6' stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                        stroke-linejoin='round'></path>
+                    </svg>
+                    <svg
+                      class='w-6 h-6 text-gray-900 transition duration-500 hidden accordion-active:text-indigo-600 accordion-active:block group-hover'
+                      viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                      <path d='M6 12H18' stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                        stroke-linejoin='round'></path>
+                    </svg>
+                  </button>
+                  <div id='basic-collapse-one-with-icon' class='accordion-content w-full  overflow-hidden pr-4'
+                    aria-labelledby='basic-heading-one'>
+                    <p class='mt-3 text-base text-primaryclr leading-4'>Uchop is a cutting-edge B2B content engine that
+                      brings your live events to life by instantly transforming them into dynamic, shareable stories,
+                      thanks
+                      to our blend of technology and expert content creators.</p>
+                  </div>
+                </div>
+
+                <!-- *Accordion 5 -->
+                <div
+                  class='accordion bg-white/30 p-[clamp(16px,3vw,50px)] shadow-lg backdrop-blur-[9.6px] backdrop-filter rounded-xl transition duration-500'
+                  id='basic-heading-one-with-icon'>
+                  <button
+                    class='accordion-toggle group inline-flex items-center justify-between text-left text-base leading-4 text-gray-900 w-full transition duration-500 accordion-active:text-white'
+                    aria-controls='basic-collapse-one-with-icon'>
+                    <h5 class="font-normal text-white w-[80%] xl:text-3xl 1.5xl:text-4xl">How much does creating speaker
+                      highlights for my event cost?</h5>
+                    <svg
+                      class='w-6 h-6 text-gray-900 transition duration-500 block accordion-active:text-indigo-600 accordion-active:hidden group-hover origin-center'
+                      viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                      <path d='M6 12H18M12 18V6' stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                        stroke-linejoin='round'></path>
+                    </svg>
+                    <svg
+                      class='w-6 h-6 text-gray-900 transition duration-500 hidden accordion-active:text-indigo-600 accordion-active:block group-hover'
+                      viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                      <path d='M6 12H18' stroke='currentColor' stroke-width='1.6' stroke-linecap='round'
+                        stroke-linejoin='round'></path>
+                    </svg>
+                  </button>
+                  <div id='basic-collapse-one-with-icon' class='accordion-content w-full  overflow-hidden pr-4'
+                    aria-labelledby='basic-heading-one'>
+                    <p class='mt-3 text-base text-primaryclr leading-4'>Uchop is a cutting-edge B2B content engine that
+                      brings your live events to life by instantly transforming them into dynamic, shareable stories,
+                      thanks
+                      to our blend of technology and expert content creators.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- *FAQ END -->
+
+    <!-- *BLOG START -->
+    <section class="my-16 md:mx-4 md:mt-5 mx-[10px] rounded-[19px] md:px-0 md:rounded-[62px] lg:px-0 xl:mb-24">
+      <div class="max-w-screen-xl mx-auto md:px-8 relative">
+
+        <!-- ?Title & Texts -->
+        <div class="pt-8 pb-[41px] text-center lg:flex lg:justify-around lg:items-center lg:pt-[67px] lg:pb-[60px]">
+
+          <!-- ?Title -->
+          <div>
+            <h2
+              class="mx-auto font-jakarta font-extrabold text-[clamp(30px,_5vw,_75px)] tracking-[-0.25px] w-[70%] leading-7 lg:mx-0 lg:text-left lg:leading-[50px] xl:leading-[70px] 1.5xl:leading-[80px]">
+              Insightful
+              <span
+                class="font-semibold italic tracking-[-1.2px] bg-gradient-to-r from-[#00689D] via-[#26BDE2] to-[#19486A] bg-clip-text text-transparent">reads</span>
+            </h2>
+          </div>
+          <!-- ?Text -->
+          <div>
+            <p
+              class="mx-auto mt-3 font-medium text-xs leading-4 w-[80%] text-primaryclr lg:mr-0 lg:text-sm lg:text-left 1.5xl:text-xl">
+              Check out our blog for tips and stories to
+              make your next event a success.</p>
+          </div>
+
+        </div>
+
+        <!-- ?Blogs -->
+        <div class="flex flex-col gap-[34px] xl:flex-row xl:flex-wrap xl:justify-evenly xl:gap-[20px]">
+
+          <!-- ?Blogs Wrapper -->
+          <div class="grid gap-6 md:gap-8 lg:grid-cols-2 xl:grid-cols-3 w-full">
+
+            <!-- <div class="mb-4 flex flex-col gap-6 sm:flex sm:flex-row sm:flex-wrap sm:justify-evenly sm:gap-6 lg:justify-normal lg:gap-[35px]"> -->
+
+            <!-- ?Blog 1 -->
+            <div
+              class="relative mx-auto w-[274px] bg-blogBg1 bg-contain sm:bg-cover bg-no-repeat md:w-[390px] md:min-h-[485px] xl:w-[392px]">
+              <!-- *Heading & Image -->
+              <div class="flex flex-col p-6 md:p-10 md:gap-8">
+                <!-- *Heading -->
+                <h3 class="font-semibold text-xl text-white md:text-3xl">
+                  Rethinking Content Marketing In an era <span class="text-lightBlueclr">of innovation.......</span>
+                </h3>
+                <!-- *Image -->
+                <div class="w-full">
+                  <img src="./assets/img-1-B1rz-TrF.png" alt="Blog image"
+                    class="mt-5 mb-5 w-full h-full object-cover rounded-[18px] md:mt-0 md:mb-5 lg:mb-10">
+                </div>
+                <!-- *Text -->
+                <p class="font-medium text-[11px] leading-4 w-[50%] text-white md:text-[13px] md:pb-0">AI reshapes
+                  work and content.
+                  Yet, in a sea of AI-generated content,....</p>
+                <!-- *Button -->
+                <a href="#"
+                  class="border-2 bg-white inline-flex absolute bottom-0 right-0 rounded-[50px] hover:bg-opacity-95 transition-all duration-300 group">
+                  <span
+                    class="size-20 inline-flex p-[30px]  rounded-full transition-all duration-300 group-hover:rotate-45 md:size-28">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#19486A"
+                      class="size-7 md:size-14 `">
+                      <path fill-rule="evenodd"
+                        d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+
+              <div>
+                <!-- *Text & Button-->
+                <!-- <div class="flex justify-between items-center">
+                  
+                </div> -->
+              </div>
+
+            </div>
+            <!-- ?Blog 2 -->
+            <div
+              class="relative mx-auto w-[274px] bg-blogBg2 bg-contain sm:bg-cover bg-no-repeat md:w-[390px] md:min-h-[485px] xl:w-[392px]">
+              <!-- *Heading & Image -->
+              <div class="flex flex-col p-6 md:p-10 md:gap-8">
+                <!-- *Heading -->
+                <h3 class="font-semibold text-xl text-white md:text-3xl">
+                  Remote Collaboration at Its Best with Uchop! <span class="text-[#FFABAB]">🌍 Partnering........</span>
+                </h3>
+                <!-- *Image -->
+                <div class="w-full">
+                  <img src="./assets/img-2-mTL7AlRk.png" alt="Blog image"
+                    class="mt-5 mb-5 w-full h-full object-cover rounded-[18px] md:mt-0 md:mb-5 lg:mb-10">
+                </div>
+                <!-- *Text -->
+                <p class="font-medium text-[11px] leading-4 w-[50%] text-white md:text-[13px] md:pb-0">AI reshapes
+                  work and content.
+                  Yet, in a sea of AI-generated content,....</p>
+                <!-- *Button -->
+                <a href="#"
+                  class="border-2 bg-white inline-flex absolute bottom-0 right-0 rounded-[50px] hover:bg-opacity-95 transition-all duration-300 group">
+                  <span
+                    class="size-20 inline-flex p-[30px]  rounded-full transition-all duration-300 group-hover:rotate-45 md:size-28">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#A21942"
+                      class="size-7 md:size-14 `">
+                      <path fill-rule="evenodd"
+                        d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+
+              <div>
+                <!-- *Text & Button-->
+                <!-- <div class="flex justify-between items-center">
+                  
+                </div> -->
+              </div>
+
+            </div>
+            <!-- ?Blog 3 -->
+            <div
+              class="relative mx-auto w-[274px] bg-blogBg3 bg-contain sm:bg-cover bg-no-repeat md:w-[390px] md:min-h-[485px] xl:w-[392px]">
+              <!-- *Heading & Image -->
+              <div class="flex flex-col p-6 md:p-10 md:gap-8">
+                <!-- *Heading -->
+                <h3 class="font-semibold text-xl text-white md:text-3xl">
+                  Rethinking Content Marketing In an era <span class="text-[#FD6925]">of innovation, staying</span>
+                </h3>
+                <!-- *Image -->
+                <div class="w-full">
+                  <img src="./assets/img-1-B1rz-TrF.png" alt="Blog image"
+                    class="mt-5 mb-5 w-full h-full object-cover rounded-[18px] md:mt-0 md:mb-5 lg:mb-10">
+                </div>
+                <!-- *Text -->
+                <p class="font-medium text-[11px] leading-4 w-[50%] text-white md:text-[13px] md:pb-0">AI reshapes
+                  work and content.
+                  Yet, in a sea of AI-generated content,....</p>
+                <!-- *Button -->
+                <a href="#"
+                  class="border-2 bg-white inline-flex absolute bottom-0 right-0 rounded-[50px] hover:bg-opacity-95 transition-all duration-300 group">
+                  <span
+                    class="size-20 inline-flex p-[30px]  rounded-full transition-all duration-300 group-hover:rotate-45 md:size-28">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FD6925"
+                      class="size-7 md:size-14 `">
+                      <path fill-rule="evenodd"
+                        d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+
+              <div>
+                <!-- *Text & Button-->
+                <!-- <div class="flex justify-between items-center">
+                  
+                </div> -->
+              </div>
+
+            </div>
+
+            <!-- </div> -->
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- *BLOG END -->
+
+    <!-- *CTA START -->
+    <section class="my-16 md:mx-4 md:mt-5 mx-[10px] rounded-[19px] md:px-0 md:rounded-[62px] lg:px-0 xl:mb-24">
+      <div class="px-5 max-w-screen-xl mx-auto md:px-8 relative">
+
+        <!-- ?CTA Column -->
+        <div class="relative">
+          <!-- ?CTA Wrapper -->
+          <div class="py-11 px-4 bg-white text-center rounded-[33px]">
+
+            <!-- ?CTA Contents -->
+            <div class="flex flex-col gap-5">
+              <!-- ?Heading -->
+              <h2
+                class="pb-2 font-urbanist font-semibold text-4xl leading-8 bg-gradient-to-r from-[#363A50] via-[#585B66] to-[#999999] bg-clip-text text-transparent sm:mx-auto sm:w-[400px] xl:text-6xl xl:w-[700px] 1.5xl:text-7xl 1.5xl:w-[800px]">
+                Let’s create something extraordinary together.</h2>
+              <!-- ?Text -->
+              <p class="font-medium text-xs leading-4 sm:mx-auto sm:w-[460px]">Don't settle for ordinary. With Uchop,
+                you can create a collaborative experience that benefits everyone involved. By focusing on personalised,
+                interactive, and cutting-edge solutions, you set a benchmark others can't match.</p>
+              <!-- ?Button -->
+              <a href="#"
+                class="inline-flex items-center mx-auto py-1 pl-5 pr-1 font-semibold text-[11px] w-[226px] md:w-[250px] bg-[#0A97D9] text-white rounded-[50px] hover:bg-opacity-95 transition-all duration-300 group md:text-[13px]">
+                Create My Legendary Event
+                <span
+                  class="inline-flex ml-3 p-[14px] bg-lightBlueclr rounded-full transition-all duration-300 group-hover:rotate-45">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd"
+                      d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+            <!-- ?BG Images -->
+            <!-- *Left BG -->
+            <div class="hidden xl:block">
+              <img src="./assets/bg-left-BeW9AKUw.png" alt="Call to action background image 1"
+                class="absolute bottom-0 left-0 object-fill h-full">
+            </div>
+            <!-- *Right BG -->
+            <div class="hidden xl:block">
+              <img src="./assets/bg-right-CCpGULy2.png" alt="Call to action background image 2"
+                class="absolute top-0 right-0 object-fill h-full">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- *CTA END -->
+
+  </main>
+  <!-- *MAIN END -->
+
+  <!-- *FOOTER START -->
+  <section class="bg-gradient-to-b from-[#19486A] to-[#0D052C]">
+    <div class="mt-16 md:mx-4 md:mt-5 mx-[10px] rounded-[19px] md:px-0 md:rounded-[62px] lg:px-0">
+      <div class="px-5 max-w-screen-xl mx-auto md:px-8 relative">
+
+        <!-- ?FOOTER Column -->
+        <div class="pt-[83px] pb-[76px] sm:pb-[66px]">
+
+          <!-- ?Footer Wrapper (Text, Logo & Links)-->
+          <div class="flex flex-col gap-16">
+
+            <!-- *First Row (Title and Email) -->
+            <div class="text-center">
+              <span class="text-[50px] leading-0">👋</span>
+              <p class="mt-[30px] mb-[14px] font-medium text-[14px] leading-5 text-white">Say hello to captivating
+                audiences and powerful content.</p>
+              <h3
+                class="relative font-semibold text-[28px] leading-8 bg-gradient-to-r from-[#0A97D9] to-yellow-500 bg-clip-text text-transparent">
+                Reach out to
+                <span
+                  class="relative inline-block bg-gradient-to-r from-[#0A97D9] to-yellow-500 bg-clip-text text-transparent">
+                  hello@uchop.com
+                  <a href="mailto:hello@uchop.com"
+                    class="absolute left-0 bottom-0 w-full h-[2px] bg-gradient-to-r from-[#0A97D9] to-yellow-500"></a>
+                </span>
+              </h3>
+            </div>
+            <!-- *Second Row (Logo and Links) -->
+            <div class="flex flex-col gap-[35px] sm:flex-row sm:justify-between sm:items-center">
+              <!-- ?Logo -->
+              <div>
+                <img src="./assets/footer-logo-DlIn0w6P.svg" alt="Footer logo" class="object-cover w-[213px] mx-auto">
+              </div>
+              <!-- *Links -->
+              <div class="flex gap-[35px]">
+                <!-- ?Link 1 -->
+                <ul>
+                  <li class="mb-2 font-extrabold text-lg text-lightBlueclr">Create</li>
+                  <li><a href="#" class="font-semibold text-[14px] text-white">Product</a></li>
+                  <li><a href="#" class="font-semibold text-[14px] text-white">Solutions</a></li>
+                </ul>
+                <!-- ?Link 2 -->
+                <ul>
+                  <li class="mb-2 font-extrabold text-lg text-lightBlueclr">About</li>
+                  <li><a href="#" class="font-semibold text-[14px] text-white">About us</a></li>
+                  <li><a href="#" class="font-semibold text-[14px] text-white">Blogs</a></li>
+                </ul>
+                <!-- ?Link 3 -->
+                <ul>
+                  <li class="mb-2 font-extrabold text-lg text-lightBlueclr">Support</li>
+                  <li><a href="#" class="font-semibold text-[14px] text-white">FAQ</a></li>
+                  <li><a href="#" class="font-semibold text-[14px] text-white">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- ?Footer Wrapper (Copywrite) -->
+          <div class="mt-24">
+
+            <!-- *Line Break (Bg Gradeint Color Line) -->
+            <div class="bg-[linear-gradient(90deg,#10183E_0%,#FFFFFF_51%,#11193E_100%)] py-[1px]"></div>
+
+            <!-- *Links & Copywrite -->
+            <div class="flex flex-col gap-[33px] mt-11 text-center sm:flex-row sm:justify-between sm:items-center">
+              <!-- *Terms & Privacy -->
+              <div class="flex justify-between sm:gap-5">
+                <a href="#" class="font-extrabold text-[14px] text-white">TERMS OF USE</a>
+                <a href="#" class="font-extrabold text-[14px] text-white">PRIVACY POLICY</a>
+              </div>
+              <!-- *Copywrite -->
+              <p class="font-semibold text-[14px] text-white">© 2024 Uchop. All right reserved.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- *FOOTER END -->
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
